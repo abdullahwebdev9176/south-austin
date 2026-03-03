@@ -23,6 +23,83 @@
 }
 
 /* Common css start here  */
+
+.common-header {
+  position: relative;
+  padding-top: 32%;
+  min-height: 350px;
+}
+
+.common-header .page-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.common-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(12, 21, 39, 0.75);
+}
+
+.common-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--Wt, #fff);
+  z-index: 1;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+}
+
+.common-header-content .common-banner-subtitle {
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: var(--font-Michroma);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+}
+
+.common-header-content .common-banner-title {
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: var(--font-Michroma);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  /* 120% */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.banner-rich-text {
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: var(--font-Manrope);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
 .btn-global {
   display: inline-block;
   padding: 13px 28px;
@@ -2091,7 +2168,101 @@ ul {
   object-fit: cover;
 }
 
+.service-offerings-section {
+  padding: 0 0 60px 0;
+  background-color: #fff;
+}
+
+.service-offerings-section h2 {
+  font-family: var(--font-Michroma, sans-serif);
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.service-offerings-section .sub-text {
+  font-family: var(--font-Manrope, sans-serif);
+  font-size: 14px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+.service-tabs {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  border: 2px solid #E5E7EB;
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s ease;
+  height: 100%;
+  min-height: 80px;
+}
+
+.service-tabs:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-tabs.dark-card {
+  background-color: var(--Blue, #00386E);
+  border: none;
+}
+
+.service-tabs .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.service-tabs:not(.dark-card) .icon-box {
+  background-color: rgba(199, 77, 65, 0.1);
+  /* Light red background */
+  color: var(--Reddish, #C74D41);
+}
+
+.service-tabs:not(.dark-card) .service-title {
+  color: #101828;
+  font-family: var(--font-Manrope);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.service-tabs.dark-card .icon-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.service-tabs.dark-card .service-title {
+  color: var(--white);
+  font-family: var(--font-Manrope);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* Make sure cards in same row have equal height */
+.height-100 {
+  height: 100%;
+}
+
 @media (max-width: 1500px) {
+  .common-header-content .common-banner-title {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+  }
+
   .shop-by-type-sec {
     padding-top: 50px;
   }
@@ -2243,6 +2414,12 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .common-header-content .common-banner-title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 2px;
+  }
+
   .fishing-brand-card {
     width: calc(100% / 2 - 14px);
   }
@@ -2486,6 +2663,23 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .central-title {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .common-header-content .common-banner-subtitle {
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .common-header-content .common-banner-title {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
   .fishing-brands-container {
     max-width: 100%;
     margin: 0 auto;
@@ -2517,6 +2711,14 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .hide-br {
+    display: none;
+  }
+
+  .banner-rich-text {
+    margin-bottom: 20px;
+  }
+
   .type-card-label {
     bottom: 16px;
     font-size: 16px;
