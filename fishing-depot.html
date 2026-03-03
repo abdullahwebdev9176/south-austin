@@ -48,6 +48,197 @@
 	</div>
 </secton>
 
+<style>
+    .fishing-brands-section {
+        padding: 40px 0 48px 0;
+    }
+
+    .fishing-brands-container {
+        max-width: calc(100% - 10%);
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    .fishing-brands-title {
+        margin-bottom: 40px;
+    }
+
+    .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Brand Card Styling */
+    .fishing-brand-card {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--Blue, #00386E);
+        aspect-ratio: 7 / 2;
+    }
+
+    .brand-col-img {
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .brand-col-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .brand-col-logo {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: var(--Blue, #00386E);
+    }
+
+    .brand-col-logo img {
+        max-width: 80%;
+        max-height: 60px;
+        object-fit: contain;
+        width: auto;
+        height: auto;
+    }
+    .fishing-white-logo{
+        filter: invert(1);
+    }
+
+    .fishing-brand-title{
+        color: var(--Blk, #000);
+        text-align: center;
+        font-family: var(--font-Manrope);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+        .brands-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 767px) {
+        .brands-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .fishing-brand-card {
+            height: auto; /* Allow flexible height on mobile if needed, but keeping fixed height maintains look */
+            min-height: 180px;
+        }
+    }
+</style>
+
+<section class="fishing-brands-section">
+    <div class="fishing-brands-container">
+        <div class="fishing-brands-title">
+            <h2 class="fishing-brand-title">Our Premium Fishing Brands</h2>
+        </div>
+        <div class="brands-grid">
+            <!-- Robalo -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-2.webp" alt="Robalo">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/robalo-logo-png-transparent 2.png" alt="Robalo Logo">
+                </div>
+            </a>
+            
+            <!-- Pathfinder -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-3.webp" alt="Pathfinder">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/Pathfinder-logo-wt 1.png" alt="Pathfinder Logo">
+                </div>
+            </a>
+
+            <!-- Shallow Sport -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-4.webp" alt="Shallow Sport">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/Shallow_Sport_Logo 2.png" alt="Shallow Sport Logo">
+                </div>
+            </a>
+
+            <!-- SCB -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-5.webp" alt="SCB">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/home/SCB_Logo 1.svg" class="fishing-white-logo" alt="SCB Logo">
+                </div>
+            </a>
+
+            <!-- Vexus -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-6.webp" alt="Vexus">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/Vexus-logo-wt 1.png" alt="Vexus Logo">
+                </div>
+            </a>
+
+            <!-- Hewes -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-7.webp" alt="Hewes">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/Heweslogo-wt-minimal 1.png" alt="Hewes Logo">
+                </div>
+            </a>
+
+            <!-- Maverick -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-8.webp" alt="Maverick">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/maverick boats-wt-minimal 1.png" alt="Maverick Logo">
+                </div>
+            </a>
+
+            <!-- Blazer Boats -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-9.webp" alt="Blazer Boats">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/blazer_logo_wt 1.png" alt="Blazer Boats Logo">
+                </div>
+            </a>
+
+            <!-- Blackfin -->
+            <a href="javascript:void(0)" class="fishing-brand-card">
+                <div class="brand-col-img">
+                    <img src="./assets/images/fishing-depot/fishing-img-10.webp" alt="Blackfin">
+                </div>
+                <div class="brand-col-logo">
+                    <img src="./assets/images/mega-menu/Blackfin-logo 1.png" alt="Blackfin Logo">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
 
 <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
