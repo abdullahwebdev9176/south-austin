@@ -1921,163 +1921,185 @@ ul {
   object-fit: contain;
   padding: 10px;
 }
-.wake-slider-section{
+
+.wake-slider-section {
   padding: 45px 0 45px 100px;
 }
 
 /* fihsing page css start here */
 
 .fishing-brands-section {
-            padding: 40px 0 48px 0;
-        }
+  padding: 40px 0 48px 0;
+}
 
-        .fishing-brands-container {
-            max-width: calc(100% - 10%);
-            margin: 0 auto;
-            padding: 0 15px;
-        }
+.fishing-brands-container {
+  max-width: calc(100% - 10%);
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-        .fishing-brands-title {
-            margin-bottom: 40px;
-        }
+.fishing-brands-title {
+  margin-bottom: 40px;
+}
 
-        .brands-grid {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+.brands-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-        /* Brand Card Styling */
-        .fishing-brand-card {
-            width: calc(100% / 3 - 14px);
-            aspect-ratio: 7 / 2;
-            display: flex;
-        }
+/* Brand Card Styling */
+.fishing-brand-card {
+  width: calc(100% / 3 - 14px);
+  aspect-ratio: 7 / 2;
+  display: flex;
+}
 
-        .brand-col-img {
-            width: 50%;
-            position: relative;
-            overflow: hidden;
-        }
+.brand-col-img {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
 
-        .brand-col-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
+.brand-col-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-        .brand-col-logo {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            background-color: var(--Blue, #00386E);
-        }
+.brand-col-logo {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--Blue, #00386E);
+}
 
-        .brand-col-logo img {
-            max-width: 80%;
-            max-height: 60px;
-            object-fit: contain;
-            width: auto;
-            height: auto;
-        }
+.brand-col-logo img {
+  max-width: 80%;
+  max-height: 60px;
+  object-fit: contain;
+  width: auto;
+  height: auto;
+}
 
-        .fishing-white-logo {
-            filter: invert(1);
-        }
+.fishing-white-logo {
+  filter: invert(1);
+}
 
-        .fishing-brand-title {
-            color: var(--Blk, #000);
-            text-align: center;
-            font-family: var(--font-Manrope);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-            text-transform: uppercase;
-        }
+.fishing-brand-title {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: var(--font-Manrope);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
 
-        .type-boat-card {
-            position: relative;
-            padding-top: 45%;
-            display: block;
-            border: 2px solid transparent;
-        }
+.type-boat-card {
+  position: relative;
+  padding-top: 45%;
+  display: block;
+  border: 2px solid transparent;
+}
 
-        .type-boat-card img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+.type-boat-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-        .type-boat-card::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            transition: all 0.2s ease;
-        }
+.type-boat-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease;
+}
 
-        .type-boat-card.active:after {
-            opacity: 0;
-        }
-        .type-boat-card.active {
-            border: 2px solid white;
-        }
+.type-boat-card.active:after {
+  opacity: 0;
+}
 
-        .type-card-label {
-            position: absolute;
-            bottom: 24px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: var(--Wt, #FFF);
-            text-align: center;
-            font-family: var(--font-Manrope);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: normal;
-            text-transform: uppercase;
-            z-index: 1;
-            width: 100%;
-        }
+.type-boat-card.active {
+  border: 2px solid white;
+}
 
-        .fishing-sec-title {
-            color: var(--Wt, #FFF);
-            text-align: center;
-            font-family: var(--font-Manrope);
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 48px;
-        }
-        .shop-by-type-sec {
-            background-image: url('/assets/images/fishing-depot/type-bg.webp');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-bottom: 6rem;
-            padding-top: 80px;
-        }
-        .fishing-inventory-sec{
-          margin-top: -4rem;
-        }
+.type-card-label {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: var(--font-Manrope);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: 1;
+  width: 100%;
+}
+
+.fishing-sec-title {
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: var(--font-Manrope);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.shop-by-type-sec {
+  background-image: url('/assets/images/fishing-depot/type-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 6rem;
+  padding-top: 80px;
+}
+
+.fishing-inventory-sec {
+  margin-top: -4rem;
+}
+
+/* service page css start here */
+
+.gallery-carousel .item {
+  position: relative;
+  padding-top: 60%;
+}
+
+.gallery-carousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 @media (max-width: 1500px) {
   .shop-by-type-sec {
-            padding-top: 50px;
-        }
+    padding-top: 50px;
+  }
+
   .wake-slider-section {
     padding: 45px 0 45px 50px;
-}
+  }
+
   .central-banner-title {
     font-size: 30px;
     line-height: 40px;
@@ -2221,8 +2243,8 @@ ul {
 }
 
 @media (max-width: 991px) {
- .fishing-brand-card {
-      width: calc(100% / 2 - 14px);
+  .fishing-brand-card {
+    width: calc(100% / 2 - 14px);
   }
 
   /* weke shop page css start */
@@ -2468,7 +2490,8 @@ ul {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-}
+  }
+
   .austin-container .austin-featured-col .content-box {
     max-width: 100%;
   }
@@ -2497,13 +2520,16 @@ ul {
   .type-card-label {
     bottom: 16px;
     font-size: 16px;
-}
-  .fishing-brand-card {
-      width: 100%;
   }
+
+  .fishing-brand-card {
+    width: 100%;
+  }
+
   .wake-slider-section {
     padding: 45px 20px 0 20px;
-}
+  }
+
   .austin-featured-logo {
     max-width: 200px;
     ;
