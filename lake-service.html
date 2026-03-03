@@ -16,7 +16,128 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        
 
+        @media (max-width: 991px) {
+            .pkg-card-wrapper {
+                margin-bottom: 30px;
+            }
+
+            .pkg-card-center {
+                transform: none;
+                padding: 40px 30px;
+            }
+        }
+
+        .pkg-badge {
+            position: absolute;
+            top: -17px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #000;
+            color: #FFF;
+            text-align: center;
+            font-family: var(--font-Manrope);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 18px;
+            text-transform: uppercase;
+            padding: 10px 19px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .pkg-name {
+            color: #FFF;
+            font-family: var(--font-Manrope);
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 42px;
+            /* 150% */
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .pkg-card-center .pkg-name {
+            color: #fff;
+        }
+
+        .pkg-price-row {
+            color: #FFF;
+            font-family: var(--font-Manrope);
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 72px;
+            margin-bottom: 30px;
+        }
+
+        .pkg-price {
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 72px;
+        }
+
+        .pkg-suffix {
+            color: #000;
+            font-family: var(--font-Manrope);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin-left: 5px;
+        }
+
+        .pkg-card-center .pkg-suffix {
+            color: rgba(255, 255, 255, 0.90);
+        }
+
+        .pkg-card-center .pkg-price {
+            color: rgba(255, 255, 255, 0.90);
+        }
+
+        .pkg-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .pkg-list-item {
+            margin-bottom: 12px;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            color: var(--Blk, #000);
+            font-family: var(--font-Manrope);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .pkg-card-center .pkg-list-item {
+            color: #fff;
+        }
+
+        .pkg-icon {
+            font-size: 11px;
+            color: #c65349;
+            margin-top: 3px;
+            margin-right: 10px;
+        }
+
+        .pkg-card-center .pkg-icon {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,13 +148,14 @@
         <div class="common-header-content">
             <h1 class="common-banner-title mt-3 mb-4">Lakeside Service</h1>
             <p class="banner-rich-text">We Haul Your Boat To & From The Lake - So You Don't Have To</p>
-            <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a> 
+            <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
         </div>
     </div>
 
-        <section class="central-content">
+    <section class="central-content">
         <h2 class="central-title mb-3">Your Trusted Lakeside Service Provider</h2>
-        <p class="mb-4">Enjoy more time on the water and less time on the road. Our professional lakeside service handles all your boat hauling needs at Lake LBJ.
+        <p class="mb-4">Enjoy more time on the water and less time on the road. Our professional lakeside service
+            handles all your boat hauling needs at Lake LBJ.
         </p>
     </section>
 
@@ -50,7 +172,9 @@
                 <div class="austin-featured-col">
                     <div class="content-box mob-pb">
                         <h3 class="bold-title-heading">How It Works</h3>
-                        <p>Our lakeside service makes boating easier than ever. Simply schedule your service, and we'll handle the rest. We pick up your boat from our facility, transport it to the lake launch, and have it ready for you when you arrive.</p>
+                        <p>Our lakeside service makes boating easier than ever. Simply schedule your service, and we'll
+                            handle the rest. We pick up your boat from our facility, transport it to the lake launch,
+                            and have it ready for you when you arrive.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
                             <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
@@ -70,7 +194,8 @@
                 <div class="austin-featured-col">
                     <div class="content-box mob-pb">
                         <h3 class="bold-title-heading">Benefits of Lakeside Service</h3>
-                        <p>Skip the stress of towing, launching, and retrieving your boat. Our lakeside service saves you time, protects your vehicle, and eliminates the hassle of boat trailer ownership.</p>
+                        <p>Skip the stress of towing, launching, and retrieving your boat. Our lakeside service saves
+                            you time, protects your vehicle, and eliminates the hassle of boat trailer ownership.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
                             <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
@@ -90,7 +215,91 @@
     </section>
 
 
+    <section class="faq-sect">
+        <div class="container">
+            <div class="central-title text-center mb-4 mb-md-5">Frequently Asked Questions</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="faq-block">
+                        <div class="faq-quiz">How far in advance should I book?</div>
+                        <div class="faq-ans">We recommend booking at least 48 hours in advance, especially for weekend
+                            trips. Monthly and seasonal package members enjoy priority scheduling.</div>
+                    </div>
+                    <div class="faq-block">
+                        <div class="faq-quiz">Is my boat insured during transport?</div>
+                        <div class="faq-ans">Yes, all boats are covered by our comprehensive insurance policy during
+                            transport and at the launch ramp.</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="faq-block">
+                        <div class="faq-quiz">What size boats do you handle?</div>
+                        <div class="faq-ans">We can transport boats up to 30 feet in length. Contact us for specific
+                            requirements or larger vessels.</div>
+                    </div>
+                    <div class="faq-block">
+                        <div class="faq-quiz">What if weather forces a cancellation?</div>
+                        <div class="faq-ans">Weather cancellations are fully refundable or can be rescheduled at no
+                            additional charge. Package members retain their trip credits.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="pkg-sect">
+        <div class="container">
+            <div class="pkg-main-title">Service Packages</div>
+            <div class="pkg-sub-title">Choose the package that fits your boating lifestyle</div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 pkg-card-wrapper mb-45 mb-lg-0">
+                    <div class="pkg-card">
+                        <div class="pkg-name">SINGLE TRIP</div>
+                        <div class="pkg-price-row">
+                            <div class="pkg-price">$150 <span class="pkg-suffix">/round trip</span></div>
+                        </div>
+                        <ul class="pkg-list">
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Same-day service</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> To and from Lake LBJ</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Launch and retrieval</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Fully insured</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 pkg-card-wrapper mb-4 mb-lg-0">
+                    <div class="pkg-card-center">
+                        <div class="pkg-badge">MOST POPULAR</div>
+                        <div class="pkg-name">MONTHLY PACKAGE</div>
+                        <div class="pkg-price-row">
+                            <div class="pkg-price">$500 <span class="pkg-suffix">/month</span></div>
+                        </div>
+                        <ul class="pkg-list">
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Up to 4 trips per month</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Priority scheduling</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Weekend availability</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Free storage included</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Save $100/month</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 pkg-card-wrapper mb-4 mb-lg-0">
+                    <div class="pkg-card">
+                        <div class="pkg-name">SEASONAL</div>
+                        <div class="pkg-price-row">
+                            <div class="pkg-price">$1,800 <span class="pkg-suffix">/season</span></div>
+                        </div>
+                        <ul class="pkg-list">
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Unlimited trips</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> 24-hour advance notice</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Premium storage</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Complimentary wash</li>
+                            <li class="pkg-list-item"><i class="fa fa-check pkg-icon"></i> Best value</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
