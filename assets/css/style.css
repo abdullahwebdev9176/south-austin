@@ -1942,17 +1942,16 @@ ul {
         }
 
         .brands-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            display: flex;
             gap: 20px;
+            flex-wrap: wrap;
         }
 
         /* Brand Card Styling */
         .fishing-brand-card {
-            display: flex;
-            flex-direction: row;
-            background-color: var(--Blue, #00386E);
+            width: calc(100% / 3 - 14px);
             aspect-ratio: 7 / 2;
+            display: flex;
         }
 
         .brand-col-img {
@@ -2048,6 +2047,7 @@ ul {
             line-height: normal;
             text-transform: uppercase;
             z-index: 1;
+            width: 100%;
         }
 
         .fishing-sec-title {
@@ -2064,24 +2064,17 @@ ul {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            position: relative;
-            height: 1080px;
-            z-index: -1;
-        }
-        .shop-by-type-sec::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
+            padding-bottom: 6rem;
+            padding-top: 80px;
         }
         .fishing-inventory-sec{
-          margin-top: -400px;
+          margin-top: -4rem;
         }
 
 @media (max-width: 1500px) {
+  .shop-by-type-sec {
+            padding-top: 50px;
+        }
   .wake-slider-section {
     padding: 45px 0 45px 50px;
 }
@@ -2228,6 +2221,9 @@ ul {
 }
 
 @media (max-width: 991px) {
+ .fishing-brand-card {
+      width: calc(100% / 2 - 14px);
+  }
 
   /* weke shop page css start */
   .austin-container .austin-featured-col .content-box {
@@ -2468,6 +2464,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .fishing-brands-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
   .austin-container .austin-featured-col .content-box {
     max-width: 100%;
   }
@@ -2493,6 +2494,13 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .type-card-label {
+    bottom: 16px;
+    font-size: 16px;
+}
+  .fishing-brand-card {
+      width: 100%;
+  }
   .wake-slider-section {
     padding: 45px 20px 0 20px;
 }
