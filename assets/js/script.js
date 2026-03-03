@@ -320,3 +320,37 @@ $(document).ready(function(){
     });
 
 });
+
+
+$(document).ready(function() {
+
+    if ($('.owl-carousel').length) {
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            dots: false,
+            autoplay: true,            
+            autoplayTimeout: 2000,    
+            autoplayHoverPause: false,
+            smartSpeed: 800,  
+            autoplaySpeed: 800,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3.5                },
+                1000:{
+                    items:4.5
+                },
+                1500:{
+                    items:6.5
+                }
+            }
+        });
+
+    }
+
+});
