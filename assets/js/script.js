@@ -353,4 +353,9 @@ $(document).ready(function() {
 
     }
 
+    $('.type-boat-card').on('click', function () {
+        console.log('Card clicked');
+        $(this).toggleClass('active');
+    });
+
 });
