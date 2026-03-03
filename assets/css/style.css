@@ -1761,6 +1761,18 @@ ul {
   max-width: 75%;
   margin: 0 auto;
 }
+.featured-subtitle{
+  color: var(--Blk, #000);
+  font-family: var(--font-Michroma);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  width: 100%;
+}
 
 .title-heading {
   color: var(--Blk, #000);
@@ -1782,6 +1794,7 @@ ul {
   font-weight: 800;
   line-height: 48px;
   margin-bottom: 24px;
+  width: 100%;
 }
 
 .central-title {
@@ -1849,8 +1862,41 @@ ul {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+.featured-list{
+  padding-left: 20px;
+}
+.featured-list-wrapper{
+  padding: 15px 0;
+  width: 100%;
+}
+.featured-list-wrapper li{
+  color: var(--Blk, #000);
+  font-family: var(--font-Manrope);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.austin-featured-logo-wrapper{
+  position: relative;
+}
+.austin-featured-logo{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 24px 30px;
+  background: #000;
+}
 
-
+.austin-featured-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 @media (max-width: 1500px) {
   .central-banner-title {
     font-size: 30px;
@@ -1997,6 +2043,16 @@ ul {
 @media (max-width: 991px) {
 
   /* weke shop page css start */
+  .austin-container .austin-featured-col .content-box{
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-list-wrapper li{
+    list-style: none;
+  }
+  .featured-list {
+    padding-left: 0;
+}
   .central-banner-title {
     font-size: 22px;
     line-height: 30px;
@@ -2247,6 +2303,9 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .austin-featured-logo {
+    max-width: 200px;;
+}
   .mob-pb {
     padding-bottom: 50px;
   }
