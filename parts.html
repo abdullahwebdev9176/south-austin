@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,86 +18,353 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<style>
+    .quality-products {
+        background-color: #ffffff;
+    }
+
+    .products-main-title {
+        font-weight: 700;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .products-subtitle {
+        font-size: 0.9rem;
+        color: #666;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .product-feature-card {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 40px 25px;
+        height: 100%;
+        text-align: left;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        background: #fff;
+    }
+
+    .feature-icon-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        aspect-ratio: 1/1;
+    }
+
+    .quality-feature-title {
+        color: var(--Blk, #000);
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .inventory-selection {
+        position: relative;
+        background-image: url('./assets/images/parts/parts-img-4.webp');
+        background-size: cover;
+        background-position: center;
+        min-height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .inventory-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .inventory-tag {
+        color: var(--Wt, #FFF);
+        text-align: center;
+        font-family: Michroma;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+    }
+
+    .inventory-main-title {
+        font-weight: 700;
+        font-size: 2.2rem;
+    }
+
+    .inventory-subtitle {
+        font-size: 0.85rem;
+        max-width: 900px;
+        opacity: 0.9;
+    }
+
+    .inventory-box {
+        background: #fff;
+        border-radius: 8px;
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.2s;
+        aspect-ratio: 13 / 8
+    }
+
+    .category-icon-bg {
+        background-color: #c94c3d;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .cat-icon {
+        width: 25px;
+        filter: brightness(0) invert(1);
+    }
+
+    .category-name {
+        color: #000;
+        text-align: center;
+        font-family: Manrope;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 24px;
+    }
+</style>
+
 <body>
 
+    <div class="common-header">
+        <img src="./assets/images/parts/parts-img-1.webp" class="page-banner-img" alt="">
 
-<secton class="austin-featured">
-	<div class="austin-sm-container">
-		<div class="austin-featured-box">
-			
-			<div class="austin-featured-col pr-40">
-				<div class="content-box mob-pb">
-                    <p class="featured-subtitle">Welcome</p>
-					<h3 class="bold-title-heading">South Austin Marine: Your One-Stop Shop for Boat Parts in Austin, TX</h3>
-					<p class="mb-3">Welcome to South Austin Marine, your premier destination for all things related to boating and marine activities. Located in the heart of Austin, Texas, our company has been serving the local community with top-quality Austin boat parts and services for years. </p>
-
-                    <p>At South Austin Marine, we understand that having a reliable and well-functioning boat is crucial for any boater's enjoyment on the water. That's why we take great pride in offering an extensive selection of boat parts for sale to keep your vessel running smoothly.</p>
-				</div>
-			</div>
-
-            <div class="austin-featured-col pl-40">
-				<div class="austin-featured-img">
-					<img src="./assets/images/wake-shop/wake-img-1.webp" alt="MADIS MARINE">
-				</div>
-			</div>
-
-		</div>
-	</div>
-</secton>
+        <div class="common-header-content">
+            <p class="common-banner-subtitle">Austin's Anchor for All Things Boating</p>
+            <h1 class="common-banner-title mt-3 mb-4">Boat Repair in Austin, TX</h1>
+            <p class="banner-rich-text">Your boat is not just a vessel—it's also an investment. Our team of experienced
+                technicians provides <br class="hide-br"> top-notch boat repair services for all types of boats.</p>
+            <a id="home-more-about-us" href="/about" class="btn-global-rd">Parts Request</a>
+        </div>
+    </div>
 
 
-<secton class="austin-featured">
-	<div class="austin-sm-container">
-		<div class="austin-featured-box">
+    <secton class="austin-featured">
+        <div class="austin-sm-container">
+            <div class="austin-featured-box">
 
-            <div class="austin-featured-col pr-40">
-				<div class="austin-featured-img">
-					<img src="./assets/images/wake-shop/wake-img-1.webp" alt="MADIS MARINE">
-				</div>
-			</div>
-			
-			<div class="austin-featured-col pl-40">
-				<div class="content-box mob-pb">
-                    <p class="featured-subtitle">Convenience</p>
-					<h3 class="bold-title-heading">Experience the Convenience of Boat Parts in Austin</h3>
-					<p class="mb-3">As boating enthusiasts ourselves, we know how frustrating it can be to have your boat out of commission due to a broken or missing part. That's why we strive to make the process of finding and purchasing boat parts as easy and hassle-free as possible.</p>
+                <div class="austin-featured-col pr-40">
+                    <div class="content-box mob-pb">
+                        <p class="featured-subtitle">Welcome</p>
+                        <h3 class="bold-title-heading">South Austin Marine: Your One-Stop Shop for Boat Parts in Austin,
+                            TX</h3>
+                        <p class="mb-3">Welcome to South Austin Marine, your premier destination for all things related
+                            to boating and marine activities. Located in the heart of Austin, Texas, our company has
+                            been serving the local community with top-quality Austin boat parts and services for years.
+                        </p>
 
-                    <p>Because we're conveniently located in Austin, you can easily stop by our store and speak with one of our knowledgeable staff members, who will assist you in finding the right part for your specific needs. We're the boat parts dealer that you can count on.</p>
-				</div>
-			</div>
+                        <p>At South Austin Marine, we understand that having a reliable and well-functioning boat is
+                            crucial for any boater's enjoyment on the water. That's why we take great pride in offering
+                            an extensive selection of boat parts for sale to keep your vessel running smoothly.</p>
+                    </div>
+                </div>
 
-            
+                <div class="austin-featured-col pl-40">
+                    <div class="austin-featured-img">
+                        <img src="./assets/images/parts/parts-img-2.webp" alt="MADIS MARINE">
+                    </div>
+                </div>
 
-		</div>
-	</div>
-</secton>
-
-<secton class="austin-featured">
-	<div class="austin-sm-container">
-		<div class="austin-featured-box">
-			
-			<div class="austin-featured-col pr-40">
-				<div class="content-box mob-pb">
-                    <p class="featured-subtitle">Expert Service</p>
-					<h3 class="bold-title-heading">Expert Assistance From Our Knowledgeable Staff</h3>
-					<p class="mb-3">At South Austin Marine, we are more than just a boat retailer; we are a team of dedicated boaters who are passionate about what we do. Our staff members have years of experience in the boating industry and are always willing to share their expertise with our customers.</p>
-
-                    <p>Whether you need help in finding the right Austin boat parts or advice on maintenance and repairs, our friendly and knowledgeable staff is always happy to assist you.</p>
-				</div>
-			</div>
-
-            <div class="austin-featured-col pl-40">
-				<div class="austin-featured-img">
-					<img src="./assets/images/wake-shop/wake-img-1.webp" alt="Expert Assistance From Our Knowledgeable Staff">
-				</div>
-			</div>
-
-		</div>
-	</div>
-</secton>
+            </div>
+        </div>
+    </secton>
 
 
-<!-- JS Libraries -->
+    <secton class="austin-featured">
+        <div class="austin-sm-container">
+            <div class="austin-featured-box reverse-col">
+
+                <div class="austin-featured-col pr-40">
+                    <div class="austin-featured-img">
+                        <img src="./assets/images/parts/parts-img-3.webp" alt="MADIS MARINE">
+                    </div>
+                </div>
+
+                <div class="austin-featured-col pl-40">
+                    <div class="content-box mob-pb">
+                        <p class="featured-subtitle">Convenience</p>
+                        <h3 class="bold-title-heading">Experience the Convenience of Boat Parts in Austin</h3>
+                        <p class="mb-3">As boating enthusiasts ourselves, we know how frustrating it can be to have your
+                            boat out of commission due to a broken or missing part. That's why we strive to make the
+                            process of finding and purchasing boat parts as easy and hassle-free as possible.</p>
+
+                        <p>Because we're conveniently located in Austin, you can easily stop by our store and speak with
+                            one of our knowledgeable staff members, who will assist you in finding the right part for
+                            your specific needs. We're the boat parts dealer that you can count on.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </secton>
+
+    <section class="central-content">
+        <h2 class="central-title mb-3">Quality Products at Competitive Prices</h2>
+        <p>At South Austin Marine, we believe in providing our customers with only the best quality products. That's why
+            we partner with reputable brands and manufacturers to ensure that all of our parts meet or exceed industry
+            standards.
+        </p>
+    </section>
+
+    <section class="quality-products pb-5">
+        <div class="austin-sm-container">
+            <div class="container-fluid text-center">
+
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-feature-card">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/parts/parts-icon-1.svg" alt="Engine Parts"
+                                    class="feature-icon">
+                            </div>
+                            <h3 class="quality-feature-title">ENGINE PARTS</h3>
+                            <p class="feature-text">Premium engine components from trusted manufacturers to keep your
+                                boat's
+                                power system running at peak performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-feature-card">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/parts/parts-icon-2.svg" alt="Electrical" class="feature-icon">
+                            </div>
+                            <h3 class="quality-feature-title">ELECTRICAL COMPONENTS</h3>
+                            <p class="feature-text">Complete selection of marine-grade electrical parts, wiring, and
+                                accessories for safe and reliable operation.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="product-feature-card">
+                            <div class="feature-icon-wrapper">
+                                <img src="./assets/images/parts/parts-icon-3.svg" alt="Audio" class="feature-icon">
+                            </div>
+                            <h3 class="quality-feature-title">AUDIO & LIGHTING</h3>
+                            <p class="feature-text">Upgrade your boat with LED lighting systems and premium marine audio
+                                equipment for enhanced enjoyment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="inventory-selection py-5">
+        <div class="inventory-overlay"></div>
+        <div class="container text-center position-relative">
+            <div class="row mb-5">
+                <div class="col-12 text-white">
+                    <span class="inventory-tag text-white">COMPLETE INVENTORY</span>
+                    <h2 class="central-title text-white mt-2">Extensive Selection for All Your Boating Needs</h2>
+                    <p class="text-white">When it comes to parts for your boat, no job is too big or too
+                        small for us at South Austin Marine. From essential items such as engine parts, propellers, and
+                        electrical components to cosmetic upgrades like LED lighting and marine audio systems, we have
+                        everything you need to keep your boat in top condition and enhance its functionality and
+                        appearance.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="inventory-box">
+                        <div class="category-icon-bg">
+                            <img src="./assets/images/parts/parts-icon-4.svg" alt="Propellers" class="cat-icon">
+                        </div>
+                        <span class="category-name">Propellers</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="inventory-box">
+                        <div class="category-icon-bg">
+                            <img src="./assets/images/parts/parts-icon-5.svg" alt="Fishing" class="cat-icon">
+                        </div>
+                        <span class="category-name">Fishing Gear</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="inventory-box">
+                        <div class="category-icon-bg">
+                            <img src="./assets/images/parts/parts-icon-6.svg" alt="Safety" class="cat-icon">
+                        </div>
+                        <span class="category-name">Safety Equipment</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-4">
+                    <div class="inventory-box">
+                        <div class="category-icon-bg">
+                            <img src="./assets/images/parts/parts-icon-7.svg" alt="Watersports" class="cat-icon">
+                        </div>
+                        <span class="category-name">Water Sports</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <secton class="austin-featured">
+        <div class="austin-sm-container mb-4">
+            <div class="austin-featured-box">
+
+                <div class="austin-featured-col pr-40">
+                    <div class="content-box mob-pb">
+                        <p class="featured-subtitle">Expert Service</p>
+                        <h3 class="bold-title-heading">Expert Assistance From Our Knowledgeable Staff</h3>
+                        <p class="mb-3">At South Austin Marine, we are more than just a boat retailer; we are a team of
+                            dedicated boaters who are passionate about what we do. Our staff members have years of
+                            experience in the boating industry and are always willing to share their expertise with our
+                            customers.</p>
+
+                        <p>Whether you need help in finding the right Austin boat parts or advice on maintenance and
+                            repairs, our friendly and knowledgeable staff is always happy to assist you.</p>
+
+                        <div class="mt-4 mt-lg-5 sec-btn">
+                            <a id="home-more-about-us" href="/about" class="blue-btn">Parts Request</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="austin-featured-col pl-40">
+                    <div class="austin-featured-img">
+                        <img src="./assets/images/parts/parts-img-5.webp"
+                            alt="Expert Assistance From Our Knowledgeable Staff">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </secton>
+
+
+    <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -117,4 +383,3 @@
 </body>
 
 </html>
-

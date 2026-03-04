@@ -148,6 +148,29 @@
   text-decoration: none;
 }
 
+.blue-btn {
+  display: inline-block;
+  padding: 13px 28px;
+  color: var(--wt, #fff);
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: var(--Blue, #00386E);
+  border: none;
+}
+
+.blue-btn:hover {
+  background-color: #002f5a;
+  color: var(--Wt);
+  text-decoration: none;
+}
+
 .btn-global-outline {
   display: inline-block;
   padding: 13px 28px;
@@ -2736,23 +2759,27 @@ ul {
 
 /* parts page css start here */
 
-.austin-sm-container{
+.austin-sm-container {
   max-width: calc(100% - 42%);
   margin: 0 auto;
 }
-.pl-40{
+
+.pl-40 {
   padding-left: 40px;
 }
 
-.pr-40{
+.pr-40 {
   padding-right: 40px;
 }
-.austin-sm-container .austin-featured-img img{
+
+.austin-sm-container .austin-featured-img img {
   border-radius: 8px;
 }
-.bg-grey{
+
+.bg-grey {
   background-color: #F7F7F7;
 }
+
 @media (max-width: 1600px) {
   .spring-content-box {
     max-width: calc(100% - 25%);
@@ -2763,6 +2790,10 @@ ul {
 
 
 @media (max-width: 1500px) {
+  .austin-sm-container {
+    max-width: calc(100% - 30%);
+  }
+
   .storage-options-content {
     padding-left: 80px;
   }
@@ -2842,7 +2873,8 @@ ul {
 @media (max-width: 1330px) {
   .card-service-title {
     font-size: 20px;
-}
+  }
+
   .bold-title-heading {
     font-size: 29px;
     line-height: 39px;
@@ -2863,6 +2895,16 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .pr-40 {
+    padding-right: 20px;
+  }
+  .pl-40 {
+    padding-left: 20px;
+  }
+  .austin-sm-container {
+    max-width: calc(100% - 20%);
+  }
+
   .austin-container {
     max-width: calc(100% - 10%);
   }
@@ -2964,6 +3006,19 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .inventory-selection{
+    margin-bottom: 0;
+  }
+  .pr-40 {
+    padding-right: 0;
+  }
+  .pl-40 {
+    padding-left: 0;
+  }
+  .austin-sm-container {
+    max-width: calc(100% - 10%);
+  }
+
   .pricing-card {
     margin-top: 30px;
   }
@@ -3240,6 +3295,13 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+
+  .austin-sm-container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .spring-content-box {
     max-width: 100%;
     padding-left: 10px;
@@ -3352,6 +3414,10 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .inventory-box {
+    aspect-ratio: unset;
+    height: 100%;
+}
   .features-sect {
     max-width: 100%;
     padding-left: 10px;
