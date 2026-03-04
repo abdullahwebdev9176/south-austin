@@ -16,25 +16,220 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .storage-options-sect {
+            padding: 80px 0;
+            background-color: #F7F7F7;
+        }
 
+
+        .storage-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .storage-desc {
+            margin-bottom: 25px;
+        }
+
+        .storage-link {
+            color: var(--Reddish, #C74D41);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .storage-link:hover {
+            color: #a54138;
+            text-decoration: none;
+        }
+
+        .storage-options-content {
+            padding-left: 120px;
+        }
+
+        .storage-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: calc(100% - 32%);
+            margin: 0 auto;
+        }
+
+        .storage-col-1 {
+            width: 35%;
+        }
+
+        .storage-col-2 {
+            width: 65%;
+        }
+
+        .spring-comm-sect {
+            padding: 80px 0 100px;
+        }
+
+        .spring-header {
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .spring-desc {
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+
+        .spring-content-box {
+            max-width: calc(100% - 42%);
+            margin: 0 auto;
+        }
+
+        .comm-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .comm-list li {
+            color: var(--Blk, #000);
+            font-family: var(--font-Inter);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        .comm-list li i {
+            font-size: 18px;
+            color: #c65349;
+            margin-right: 12px;
+            font-weight: 400;
+        }
+
+        .pricing-card {
+            background-color: #fafbfc;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            padding: 25px 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+            height: 100%;
+        }
+
+        .pricing-label {
+            color: var(--Blk, #000);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-amount {
+            color: var(--Blk, #000);
+            font-family: Inter;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 36px;
+            margin-bottom: 10px;
+        }
+
+        .pricing-note {
+            color: var(--Blk, #000);
+            font-family: Inter;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .cta-banner {
+            width: 100%;
+            position: relative;
+        }
+
+        .overlap-btn-wrapper {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        .overlap-btn {
+            padding: 13px 30px;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border-radius: 4px;
+            box-shadow: 0 4px 10px rgba(198, 83, 73, 0.3);
+        }
+
+        .banner-img-container img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+            display: block;
+        }
+
+
+
+        @media (max-width: 991px) {
+            .pricing-card {
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .spring-content-box {
+                max-width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .spring-header{
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
     <div class="common-header">
-        <img src="/assets/images/service/service-img-1.webp" class="page-banner-img" alt="">
+        <img src="./assets/images/seasonal/seasonal-header.webp" class="page-banner-img" alt="">
 
         <div class="common-header-content">
-            <h1 class="common-banner-title mt-3 mb-4">Winterization Services</h1>
-            <p class="banner-rich-text">When the boating season winds down, proper winterization is essential to protect your vessel from harsh winter conditions. Our certified technicians ensure your boat is ready to weather the off-season without damage.</p>
+            <h1 class="common-banner-title mt-3 mb-4">Winterization & Spring Commissioning Services</h1>
+            <p class="banner-rich-text">Protect your investment with South Austin Marine's expert seasonal maintenance.
+                Keep your vessel in peak condition year-round with our comprehensive winterization and spring
+                commissioning packages.</p>
             <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
         </div>
     </div>
 
     <section class="central-content">
-        <h2 class="central-title mb-3">Your Trusted Lakeside Service Provider</h2>
-        <p class="mb-4">Enjoy more time on the water and less time on the road. Our professional lakeside service
-            handles all your boat hauling needs at Lake LBJ.
+        <h2 class="central-title mb-3">Winterization Services</h2>
+        <p class="mb-4">When the boating season winds down, proper winterization is essential to protect your vessel
+            from harsh winter conditions. Our certified technicians ensure your boat is ready to weather the off-season
+            without damage.
         </p>
     </section>
 
@@ -51,9 +246,15 @@
                 <div class="austin-featured-col">
                     <div class="content-box mob-pb">
                         <h3 class="bold-title-heading">The Importance of Boat Winterization</h3>
-                        <p class="mb-3">Winterizing your boat may seem like an extra expense or hassle, but it is crucial for maintaining the overall health and performance of your vessel. As temperatures drop, water in your boat’s engine and other systems can freeze, causing damage that could potentially be costly to repair.</p>
+                        <p class="mb-3">Winterizing your boat may seem like an extra expense or hassle, but it is
+                            crucial for maintaining the overall health and performance of your vessel. As temperatures
+                            drop, water in your boat’s engine and other systems can freeze, causing damage that could
+                            potentially be costly to repair.</p>
 
-                        <p>At South Austin Marine, we take all necessary precautions to prevent any freezing or damage from occurring during winter. Our team will ensure that all fluids are drained from your boat’s systems, including the engine block, manifolds, and cooling system. We also use high-quality antifreeze solutions to further protect against freezing.</p>
+                        <p>At South Austin Marine, we take all necessary precautions to prevent any freezing or damage
+                            from occurring during winter. Our team will ensure that all fluids are drained from your
+                            boat’s systems, including the engine block, manifolds, and cooling system. We also use
+                            high-quality antifreeze solutions to further protect against freezing.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
                             <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
@@ -73,7 +274,10 @@
                 <div class="austin-featured-col">
                     <div class="content-box mob-pb">
                         <h3 class="bold-title-heading">How to Prepare Your Boat for Winter</h3>
-                        <p>Drain engine blocks, manifolds, exhaust systems, water pumps, any other areas that might contain water that will crack and freeze. Treat your fuel system with stabilizer & run engine to temp. Disconnect your battery; if there is not a battery, switch and tag steering wheel. Treat freshwater systems with non-toxic antifreeze.</p>
+                        <p>Drain engine blocks, manifolds, exhaust systems, water pumps, any other areas that might
+                            contain water that will crack and freeze. Treat your fuel system with stabilizer & run
+                            engine to temp. Disconnect your battery; if there is not a battery, switch and tag steering
+                            wheel. Treat freshwater systems with non-toxic antifreeze.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
                             <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Service</a>
@@ -91,6 +295,75 @@
             </div>
         </div>
     </section>
+
+    <section class="storage-options-sect">
+        <div class="storage-wrapper">
+            <div class="storage-col-1">
+                <img src="./assets/images/seasonal/seasonal-1.webp" class="w-100" alt="Storage Options">
+            </div>
+            <div class="storage-col-2">
+                <div class="storage-options-content">
+                    <h2 class="bold-title-heading">Storage Options available</h2>
+                    <p class="storage-desc">Maximize protection and peace of mind with our secure storage facilities.
+                        Whether you need short-term or long-term storage, we have the perfect solution for your vessel.
+                    </p>
+                    <a href="#" class="storage-link">STORAGE DETAILS &gt;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="spring-comm-sect">
+        <div class="spring-header text-center">
+            <h2 class="central-title">Spring Commissioning</h2>
+            <p class="spring-desc">Get your boat ready for the water with our comprehensive spring commissioning
+                services. We'll ensure every system is running perfectly so you can enjoy a worry-free boating
+                season from day one.</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="spring-content-box">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-7 col-md-11 mb-4 mb-lg-0">
+                        <div class="row">
+                            <div class="col-sm-6 text-left">
+                                <ul class="comm-list">
+                                    <li><i class="fa fa-check-circle-o"></i> Complete Engine System Check</li>
+                                    <li><i class="fa fa-check-circle-o"></i> Propulsion & Steering Inspection</li>
+                                    <li><i class="fa fa-check-circle-o"></i> Safety Equipment Verification</li>
+                                    <li><i class="fa fa-check-circle-o"></i> Battery Installation & Testing</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 text-left">
+                                <ul class="comm-list">
+                                    <li><i class="fa fa-check-circle-o"></i> Hull & Bottom Cleaning</li>
+                                    <li><i class="fa fa-check-circle-o"></i> Full Detailing & Waxing</li>
+                                    <li><i class="fa fa-check-circle-o"></i> System Functionality Tests</li>
+                                    <li><i class="fa fa-check-circle-o"></i> Pre-Launch Sea Trial</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 mx-auto">
+                        <div class="pricing-card text-left">
+                            <div class="pricing-label">STARTING AT</div>
+                            <div class="pricing-amount">$595</div>
+                            <div class="pricing-note">*Price varies by boat size and services required</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-banner">
+        <div class="overlap-btn-wrapper text-center">
+            <a href="/about" class="btn-global-rd overlap-btn">REQUEST SERVICE</a>
+        </div>
+        <div class="banner-img-container">
+            <img src="./assets/images/seasonal/seasonal-2.webp" alt="Request Service Banner">
+        </div>
+    </div>
 
     <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
