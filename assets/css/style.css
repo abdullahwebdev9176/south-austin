@@ -2830,7 +2830,7 @@ ul {
 
 .inventory-selection {
   position: relative;
-  background-image: url('./assets/images/parts/parts-img-4.webp');
+  background-image: url('/assets/images/parts/parts-img-4.webp');
   background-size: cover;
   background-position: center;
   min-height: 500px;
