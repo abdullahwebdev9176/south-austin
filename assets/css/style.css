@@ -2502,6 +2502,180 @@ ul {
   line-height: 24px;
 }
 
+/* seasonal page css start here */
+
+.storage-options-sect {
+  padding: 80px 0;
+  background-color: #F7F7F7;
+}
+
+
+.storage-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.storage-desc {
+  margin-bottom: 25px;
+}
+
+.storage-link {
+  color: var(--Reddish, #C74D41);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.storage-link:hover {
+  color: #a54138;
+  text-decoration: none;
+}
+
+.storage-options-content {
+  padding-left: 120px;
+}
+
+.storage-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100% - 32%);
+  margin: 0 auto;
+}
+
+.storage-col-1 {
+  width: 35%;
+}
+
+.storage-col-2 {
+  width: 65%;
+}
+
+.spring-comm-sect {
+  padding: 80px 0 100px;
+}
+
+.spring-header {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.spring-desc {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.spring-content-box {
+  max-width: calc(100% - 42%);
+  margin: 0 auto;
+}
+
+.comm-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comm-list li {
+  color: var(--Blk, #000);
+  font-family: var(--font-Inter);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.comm-list li i {
+  font-size: 18px;
+  color: #c65349;
+  margin-right: 12px;
+  font-weight: 400;
+}
+
+.pricing-card {
+  background-color: #fafbfc;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 25px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  height: 100%;
+}
+
+.pricing-label {
+  color: var(--Blk, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+}
+
+.pricing-amount {
+  color: var(--Blk, #000);
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.pricing-note {
+  color: var(--Blk, #000);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.cta-banner {
+  width: 100%;
+  position: relative;
+}
+
+.overlap-btn-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.overlap-btn {
+  padding: 13px 30px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(198, 83, 73, 0.3);
+}
+
+.banner-img-container img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
 @media (max-width: 1600px) {
   .spring-content-box {
     max-width: calc(100% - 25%);
@@ -2699,6 +2873,10 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .pricing-card {
+    margin-top: 30px;
+  }
+
   .storage-wrapper {
     max-width: 100%;
     padding-left: 20px;
@@ -2971,24 +3149,41 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-      .storage-wrapper {
-        flex-direction: column-reverse;
-    }
-    .storage-col-1, .storage-col-2 {
+  .spring-content-box {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .spring-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .storage-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .storage-col-1,
+  .storage-col-2 {
     width: 100%;
-}
-    .storage-options-content {
-        padding-left: 0;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-    .storage-options-sect {
+  }
+
+  .storage-options-content {
+    padding-left: 0;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  .storage-options-sect {
     padding: 50px 0;
     background-color: #F7F7F7;
-}
-.spring-comm-sect {
+  }
+
+  .spring-comm-sect {
     padding: 50px 0 70px;
-}
+  }
+
   .pkg-sect {
     padding: 50px 0;
   }
