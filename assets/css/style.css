@@ -2734,6 +2734,25 @@ ul {
   margin-bottom: 15px;
 }
 
+/* parts page css start here */
+
+.austin-sm-container{
+  max-width: calc(100% - 42%);
+  margin: 0 auto;
+}
+.pl-40{
+  padding-left: 40px;
+}
+
+.pr-40{
+  padding-right: 40px;
+}
+.austin-sm-container .austin-featured-img img{
+  border-radius: 8px;
+}
+.bg-grey{
+  background-color: #F7F7F7;
+}
 @media (max-width: 1600px) {
   .spring-content-box {
     max-width: calc(100% - 25%);
