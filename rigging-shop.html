@@ -23,11 +23,87 @@
 
 
     <style>
-        
+        /* Section Styles */
+        .what-we-rig {
+            background-color: #ffffff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .rig-main-title {
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        /* Card Styling */
+        .rig-card {
+            background-color: #f8f9fa;
+            /* Very light grey card background */
+            border-radius: 10px;
+            padding: 30px 25px;
+            height: 100%;
+            border: none;
+        }
+
+        .rig-card-title {
+            color: var(--Blk, #000);
+
+            /* h5 */
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+            /* 133.333% */
+            margin-bottom: 25px;
+            color: #000;
+        }
+
+        /* List Styling with Red Bullets */
+        .rig-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .rig-list li {
+            color: #364153;
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+
+        }
+
+        /* Custom Red Bullet Point */
+        .rig-list li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            /* Centers dot with first line of text */
+            width: 4px;
+            height: 4px;
+            background-color: #d9534f;
+            /* The red color from the screenshot */
+            border-radius: 50%;
+        }
+
+        /* Responsive Font Sizing */
+        @media (max-width: 768px) {
+            .rig-main-title {
+                font-size: 2rem;
+            }
+        }
     </style>
 
     <div class="common-header">
-        <img src="/assets/images/service/service-img-1.webp" class="page-banner-img" alt="">
+        <img src="./assets/images/rigging/rig-img-1.webp" class="page-banner-img" alt="">
 
         <div class="common-header-content">
             <p class="common-banner-subtitle">Power Boat Rigging</p>
@@ -41,66 +117,69 @@
     <section class="rigging-services py-5">
         <div class="rigging-service-container">
             <div class="container-fluid">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="bold-title-heading">Our Rigging Services</h2>
-                    <p>Professional boat rigging for all types of power boats. Quality
-                        workmanship backed by years of experience.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <a href="#" class="card-link">
-                        <div class="rigging-service-card">
-                            <div class="rigging-card-image">
-                                <img src="./assets/images/dummy.png" alt="">
-                            </div>
-                            <div class="card-body-content">
-                                <h3 class="card-service-title">ELECTRONICS INSTALLATION</h3>
-                                <p class="card-service-text">Professional installation of fish finders, GPS units,
-                                    radios, and complete navigation systems. We ensure proper mounting, wiring, and
-                                    integration.</p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="bold-title-heading">Our Rigging Services</h2>
+                        <p>Professional boat rigging for all types of power boats. Quality
+                            workmanship backed by years of experience.</p>
+                    </div>
                 </div>
 
-                <div class="col-lg-4 mb-4">
-                    <a href="#" class="card-link">
-                        <div class="rigging-service-card">
-                            <div class="rigging-card-image">
-                                <img src="./assets/images/dummy.png" alt="">
+                <div class="row">
+                    <div class="col-lg-4 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="rigging-service-card">
+                                <div class="rigging-card-image">
+                                    <img src="./assets/images/dummy.png" alt="">
+                                </div>
+                                <div class="card-body-content">
+                                    <h3 class="card-service-title">ELECTRONICS INSTALLATION</h3>
+                                    <p class="card-service-text">Professional installation of fish finders, GPS units,
+                                        radios, and complete navigation systems. We ensure proper mounting, wiring, and
+                                        integration.</p>
+                                </div>
                             </div>
-                            <div class="card-body-content">
-                                <h3 class="card-service-title">POWER & TROLLING MOTORS</h3>
-                                <p class="card-service-text">Expert installation and service of outboard motors,
-                                    trolling motors, and power systems. We handle everything from mounting to electrical
-                                    connections.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
 
-                <div class="col-lg-4 mb-4">
-                    <a href="#" class="card-link">
-                        <div class="rigging-service-card">
-                            <div class="rigging-card-image">
-                                <img src="./assets/images/dummy.png" alt="">
+                    <div class="col-lg-4 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="rigging-service-card">
+                                <div class="rigging-card-image">
+                                    <img src="./assets/images/dummy.png" alt="">
+                                </div>
+                                <div class="card-body-content">
+                                    <h3 class="card-service-title">POWER & TROLLING MOTORS</h3>
+                                    <p class="card-service-text">Expert installation and service of outboard motors,
+                                        trolling motors, and power systems. We handle everything from mounting to
+                                        electrical
+                                        connections.</p>
+                                </div>
                             </div>
-                            <div class="card-body-content">
-                                <h3 class="card-service-title">CUSTOM FISHING SETUPS</h3>
-                                <p class="card-service-text">Complete fishing rigging including rod holders, live wells,
-                                    bait tanks, and tackle storage. Customized to your fishing style and boat layout.
-                                </p>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 mb-4">
+                        <a href="#" class="card-link">
+                            <div class="rigging-service-card">
+                                <div class="rigging-card-image">
+                                    <img src="./assets/images/dummy.png" alt="">
+                                </div>
+                                <div class="card-body-content">
+                                    <h3 class="card-service-title">CUSTOM FISHING SETUPS</h3>
+                                    <p class="card-service-text">Complete fishing rigging including rod holders, live
+                                        wells,
+                                        bait tanks, and tackle storage. Customized to your fishing style and boat
+                                        layout.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        
+
     </section>
 
     <secton class="austin-featured">
@@ -109,7 +188,7 @@
 
                 <div class="austin-featured-col">
                     <div class="austin-featured-img">
-                        <img src="/assets/images/service/service-img-3.webp" alt="MADIS MARINE">
+                        <img src="./assets/images/rigging/rig-img-2.webp" alt="MADIS MARINE">
                     </div>
                 </div>
 
@@ -136,29 +215,97 @@
         </div>
     </secton>
 
+    <section class="what-we-rig py-5">
+        <div class="rigging-service-container">
+            <div class="container-fluid">
+                <div class="text-center mb-4">
+                    <h2 class="bold-title-heading">What We Rig</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="rig-card">
+                            <h3 class="rig-card-title">Electronics & Navigation</h3>
+                            <ul class="rig-list">
+                                <li>GPS & Chart Plotters</li>
+                                <li>Fish Finders & Sonar</li>
+                                <li>VHF & Communication Radios</li>
+                                <li>Radar Systems</li>
+                                <li>Autopilot Installation</li>
+                                <li>Network Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="rig-card">
+                            <h3 class="rig-card-title">Electrical Systems</h3>
+                            <ul class="rig-list">
+                                <li>Battery Systems & Management</li>
+                                <li>Wiring & Circuit Protection</li>
+                                <li>LED Lighting Installation</li>
+                                <li>Power Distribution Panels</li>
+                                <li>Solar Panel Integration</li>
+                                <li>Inverter Installation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="rig-card">
+                            <h3 class="rig-card-title">Fishing Equipment</h3>
+                            <ul class="rig-list">
+                                <li>Rod Holders & Rocket Launchers</li>
+                                <li>Live Well Systems</li>
+                                <li>Bait Tank Installation</li>
+                                <li>Fish Box Modifications</li>
+                                <li>Tackle Storage Solutions</li>
+                                <li>Downrigger Installation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6 mb-4">
+                        <div class="rig-card">
+                            <h3 class="rig-card-title">Accessories & Upgrades</h3>
+                            <ul class="rig-list">
+                                <li>T-Top & Hard Top Installation</li>
+                                <li>Leaning Post & Seating</li>
+                                <li>Trolling Motor Installation</li>
+                                <li>Jack Plates</li>
+                                <li>Trim Tabs</li>
+                                <li>Safety Equipment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="owl-carousel gallery-carousel owl-theme">
         <div class="item">
-            <a href="./assets/images/service/service-img-5.webp" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/service/service-img-5.webp" alt="MADIS MARINE">
+            <a href="./assets/images/rigging/rig-img-3.webp" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/rigging/rig-img-3.webp" alt="MADIS MARINE">
             </a>
         </div>
 
         <div class="item">
-            <a href="./assets/images/service/service-img-6.webp" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/service/service-img-6.webp" alt="MADIS MARINE">
+            <a href="./assets/images/rigging/rig-img-4.webp" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/rigging/rig-img-4.webp" alt="MADIS MARINE">
             </a>
         </div>
 
         <div class="item">
-            <a href="./assets/images/service/service-img-8.webp" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/service/service-img-8.webp" alt="MADIS MARINE">
+            <a href="./assets/images/rigging/rig-img-5.webp" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/rigging/rig-img-5.webp" alt="MADIS MARINE">
             </a>
         </div>
 
         <div class="item">
-            <a href="./assets/images/service/service-img-7.webp" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/service/service-img-7.webp" alt="MADIS MARINE">
+            <a href="./assets/images/rigging/rig-img-6.webp" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/rigging/rig-img-6.webp" alt="MADIS MARINE">
             </a>
         </div>
     </div>
