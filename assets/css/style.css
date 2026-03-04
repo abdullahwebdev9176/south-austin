@@ -2676,6 +2676,64 @@ ul {
   display: block;
 }
 
+/* rigging page css start here */
+
+.rigging-services {
+  background-color: #F7F7F7;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.rigging-rigging-service-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.rigging-service-card {
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+}
+
+.rigging-card-image {
+  position: relative;
+  padding-top: 60%;
+}
+
+.rigging-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.rigging-service-container {
+  max-width: calc(100% - 20%);
+  margin: 0 auto;
+}
+
+.card-body-content {
+  padding: 30px 25px;
+}
+
+.card-service-title {
+  color: #0A0A0A;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 1600px) {
   .spring-content-box {
     max-width: calc(100% - 25%);
@@ -2755,11 +2813,17 @@ ul {
 
   .austin-container {
     max-width: calc(100% - 15%);
-    margin: 0 auto;
+  }
+
+  .rigging-service-container {
+    max-width: calc(100% - 13%);
   }
 }
 
 @media (max-width: 1330px) {
+  .card-service-title {
+    font-size: 20px;
+}
   .bold-title-heading {
     font-size: 29px;
     line-height: 39px;
@@ -2780,6 +2844,14 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .austin-container {
+    max-width: calc(100% - 10%);
+  }
+
+  .rigging-service-container {
+    max-width: calc(100% - 8%);
+  }
+
   .storage-options-content {
     padding-left: 50px;
   }
