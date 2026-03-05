@@ -22,6 +22,18 @@
 <body>
 
     <style>
+        
+        @media (max-width: 767px) {
+            .job-detail-main-title {
+                font-size: 1.75rem;
+            }
+
+            .detail-section-label {
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #000;
+                display: inline-block;
+            }
+        }
     </style>
 
     <div class="common-header career-header">
@@ -57,25 +69,15 @@
                                     <span class="fa fa-map-marker"></span> Austin, TX
                                 </p>
                                 <div class="d-flex justify-content-center career-card-btn">
-                                    <a href="javascript:void(0)" class="btn btn-outline-dark job-btn-outline mx-2">JOB
+                                    <a href="javascript:void(0)" class="btn btn-outline-dark job-btn-outline mx-2"
+                                        data-toggle="modal" data-target="#job-description">JOB
                                         DESCRIPTION</a>
-                                    <a href="javascript:void(0)" class="btn btn-primary job-btn-filled mx-2">APPLY
+                                    <a href="javascript:void(0)" class="btn btn-primary job-btn-filled mx-2"
+                                        data-toggle="modal" data-target="#apply-form">APPLY
                                         NOW</a>
                                 </div>
                             </div>
 
-                            <div class="job-card text-center">
-                                <h4 class="job-title mb-1">Sales Professional/Marine Consultant</h4>
-                                <p class="job-location mb-3">
-                                    <span class="fa fa-map-marker"></span> Austin, TX
-                                </p>
-                                <div class="d-flex justify-content-center career-card-btn   ">
-                                    <a href="javascript:void(0)" class="btn btn-outline-dark job-btn-outline mx-2">JOB
-                                        DESCRIPTION</a>
-                                    <a href="javascript:void(0)" class="btn btn-primary job-btn-filled mx-2">APPLY
-                                        NOW</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -84,6 +86,85 @@
         </div>
 
     </section>
+
+    <div class="modal job-description-modal fade" id="job-description" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-labelledby="job-descriptionLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <section class="job-detail-section pb-5">
+                        <div class="container-fluid pb-4">
+                            <div class="text-center mb-5">
+                                <h1 class="job-detail-main-title">Sales Professional/Marine Consultant</h1>
+                                <p class="job-detail-meta mb-1">Austin, TX</p>
+                                <p class="job-detail-time">Full Time - 40 hours/week</p>
+                                <p class="job-detail-time">Starting at $25/hour</p>
+                            </div>
+
+                            <hr class="detail-divider">
+
+                            <div class="row mb-5">
+                                <div class="col-md-3">
+                                    <h5 class="detail-section-label">Job Description</h5>
+                                </div>
+                                <div class="col-md-9">
+                                    <p class="detail-body-text">
+                                        Our industry continues to grow at an increasingly faster pace, and we are
+                                        searching for Best In Class Sales Professionals to help us meet demand during
+                                        this exciting and lucrative time. What sets them apart is a talent for
+                                        developing relationships, a passion for the water, and a desire to unite people
+                                        with that passion. Our offer is simple; excellent compensation & benefits
+                                        packages, a premium product line for every power boating customer, and cutting
+                                        edge tools to provide you with the support you need to reach new heights in your
+                                        career.
+                                    </p>
+                                    <ul class="detail-bullet-list mt-3">
+                                        <li>Acquire full knowledge of complete product line, features and accessories
+                                            available for purchase</li>
+                                        <li>Show product in the showroom, at off-site displays or shows, and demonstrate
+                                            boats on the water</li>
+                                        <li>Oversee the delivery of each unit sold</li>
+                                        <li>Introduce customers to the dealership team to emphasize the quality and
+                                            efficiency of dealership's service operations</li>
+                                        <li>Actively participate in boat shows and other off-site promotions</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <hr class="detail-divider">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h5 class="detail-section-label">Requirements</h5>
+                                </div>
+                                <div class="col-md-9">
+                                    <ul class="detail-bullet-list">
+                                        <li>High School diploma</li>
+                                        <li>A valid driver's license with a good driving record</li>
+                                        <li>Good organizational skills, be a multi tasker and work well under pressure
+                                        </li>
+                                        <li>Ability to provide knowledgeable, courteous, and professional customer
+                                            service</li>
+                                        <li>Good working knowledge of boats and boating</li>
+                                        <li>Good communication skills</li>
+                                        <li>Good computer skills</li>
+                                        <li>Area is kept neat, clean, and organized all the time</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"

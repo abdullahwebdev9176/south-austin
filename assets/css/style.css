@@ -3668,6 +3668,105 @@ ul {
   margin: 0 0 0 auto;
 }
 
+.job-description-modal .modal-dialog {
+  max-width: 1250px;
+  width: 100%;
+}
+
+.job-description-modal .modal-header .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.job-description-modal .modal-header {
+  border-bottom: none;
+}
+
+.job-detail-section {
+  font-family: 'Arial', sans-serif;
+  color: #000;
+}
+
+.job-detail-main-title {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.job-detail-meta {
+  color: var(--Blk, rgba(34, 34, 34, 0.60));
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-section-label {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.detail-body-text {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-bullet-list {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-bullet-list li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.detail-divider {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin: 2rem 0;
+}
+
+.job-detail-time {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 @media (max-width: 1600px) {
   .career-modal-wrapper {
     max-width: 80%;
@@ -3927,6 +4026,12 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .job-detail-main-title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
   .employment-content {
     text-align: center;
   }
@@ -4244,6 +4349,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .job-detail-main-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
   .history-main-title {
     font-size: 40px;
     line-height: 45px;
