@@ -22,18 +22,7 @@
 <body>
 
     <style>
-        
-        @media (max-width: 767px) {
-            .job-detail-main-title {
-                font-size: 1.75rem;
-            }
 
-            .detail-section-label {
-                margin-bottom: 1rem;
-                border-bottom: 2px solid #000;
-                display: inline-block;
-            }
-        }
     </style>
 
     <div class="common-header career-header">
@@ -159,6 +148,57 @@
                             </div>
                         </div>
                     </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal apply-form-modal fade" id="apply-form" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="apply-formLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h2 class="form-main-title text-uppercase mb-2">Employment Application</h2>
+                        <h3 class="form-job-title mb-1">Sales Professional/Marine Consultant</h3>
+                        <p class="job-location mb-3">
+                                    <span class="fa fa-map-marker"></span> Austin, TX
+                                </p>
+
+                        <form class="app-form">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="First Name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control custom-input" placeholder="Last Name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="email" class="form-control custom-input" placeholder="Email">
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="tel" class="form-control custom-input" placeholder="Phone">
+                            </div>
+
+                            <div class="input-group mb-5 custom-file-group">
+                                <div class="input-group-prepend">
+                                    <label class="btn btn-outline-dark upload-label mb-0" for="resumeUpload">
+                                        UPLOAD RESUME
+                                    </label>
+                                </div>
+                                <div class="custom-file-display d-flex align-items-center px-3">
+                                    No File Chosen
+                                </div>
+                                <input type="file" class="d-none" id="resumeUpload">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit-btn px-5">SUBMIT</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

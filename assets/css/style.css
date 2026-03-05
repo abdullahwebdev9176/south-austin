@@ -3767,6 +3767,102 @@ ul {
   line-height: 24px;
 }
 
+.apply-form-modal .modal-dialog {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Container and Typography */
+.application-section {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.form-main-title {
+  color: var(--Blk, #000);
+text-align: center;
+font-family: Manrope;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.form-job-title {
+  color: var(--Blk, #000);
+text-align: center;
+font-family: Manrope;
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 24px; 
+}
+
+.form-location {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.location-dot::before {
+  content: "📍";
+  /* Or use a small SVG icon for the red pin */
+  margin-right: 5px;
+}
+
+/* Input Fields */
+.custom-input {
+  height: 50px;
+  border: 1.5px solid #dee2e6;
+  border-radius: 8px;
+  padding-left: 15px;
+}
+
+.custom-input::placeholder {
+  color: #999;
+}
+
+/* File Upload Section */
+.custom-file-group {
+  border: 1.5px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.upload-label {
+  background: transparent;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 12px 20px;
+  border-radius: 0;
+  color: #000;
+  white-space: nowrap;
+  border-radius: 8px 0 0 8px;
+  border: 2px solid var(--Blk, #000);
+}
+
+.custom-file-display {
+  color: #999;
+  font-size: 0.9rem;
+  background: #fff;
+  flex-grow: 1;
+}
+
+.submit-btn {
+  background-color: #003a70;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 40px;
+  letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+  background-color: #00264d;
+}
+
 @media (max-width: 1600px) {
   .career-modal-wrapper {
     max-width: 80%;
