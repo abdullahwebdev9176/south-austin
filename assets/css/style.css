@@ -3561,7 +3561,118 @@ ul {
   text-decoration: none;
 }
 
+/* career page css start here */
+
+.career-header::after {
+  background: unset;
+  position: unset;
+}
+
+.employment-subtitle {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.positions-header {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.job-card {
+  border-radius: 8px;
+  border: 1px solid var(--D9, #D9D9D9);
+  background: #FAFAFA;
+  padding: 36px 40px 44px 36px;
+}
+
+.job-title {
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.job-location {
+  color: rgba(0, 0, 0, 0.60);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.job-location span {
+  color: #C74D41;
+  opacity: 0.6;
+  margin-right: 5px;
+}
+
+.job-btn-outline {
+  border-radius: 6px;
+  color: var(--Blk, #000);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.job-btn-outline:hover {
+  color: var(--Blk, #000);
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.job-btn-filled {
+  background-color: #003a70;
+  border-color: #003a70;
+  border-radius: 6px;
+  color: var(--Wt, #FFF);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+}
+
+.job-btn-filled:hover {
+  background-color: #003a70;
+  border-color: #003a70;
+}
+
+.career-modal-wrapper {
+  max-width: 70%;
+  margin: 0 0 0 auto;
+}
+
 @media (max-width: 1600px) {
+  .career-modal-wrapper {
+    max-width: 80%;
+  }
+
   .austin-crew-container {
     max-width: calc(100% - 28%);
   }
@@ -3660,6 +3771,10 @@ ul {
 }
 
 @media (max-width: 1330px) {
+  .career-modal-wrapper {
+    max-width: 90%;
+  }
+
   .card-service-title {
     font-size: 20px;
   }
@@ -3684,6 +3799,11 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .career-card-btn {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
   .austin-crew-container {
     max-width: calc(100% - 15%);
   }
@@ -3807,6 +3927,14 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .employment-content {
+    text-align: center;
+  }
+
+  .career-modal-wrapper {
+    max-width: 100%;
+  }
+
   .crew-content-box {
     max-width: 100%;
   }
