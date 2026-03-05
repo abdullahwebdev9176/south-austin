@@ -212,6 +212,11 @@ a:hover {
   text-decoration: none;
 }
 
+.my-24 {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
@@ -3780,23 +3785,23 @@ ul {
 
 .form-main-title {
   color: var(--Blk, #000);
-text-align: center;
-font-family: Manrope;
-font-size: 24px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-text-transform: uppercase;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .form-job-title {
   color: var(--Blk, #000);
-text-align: center;
-font-family: Manrope;
-font-size: 18px;
-font-style: normal;
-font-weight: 800;
-line-height: 24px; 
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
 }
 
 .form-location {
@@ -3861,6 +3866,64 @@ line-height: 24px;
 
 .submit-btn:hover {
   background-color: #00264d;
+}
+
+/* testimonials page css start here */
+
+.reviews-container {
+  width: calc(100% - 80px);
+  margin: 0 auto 60px auto;
+}
+
+.reviews-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews-card-box {
+  padding: 20px;
+  width: calc(100% / 3);
+}
+
+.reviews-card {
+  border-radius: 10px;
+border: 1px solid var(--D9, #D9D9D9);
+background: #FFF;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  padding: 48px 40px;
+}
+
+.reviews-card-content {
+  width: calc(100% - 40px);
+}
+
+.dark-line-separator {
+  background: var(--black-color);
+  margin-top: 19px;
+  margin-bottom: 19px;
+}
+
+.user-name {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.review-locaiton {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.reviews-qoutation-icon {
+  margin-bottom: 12px;
 }
 
 @media (max-width: 1600px) {
