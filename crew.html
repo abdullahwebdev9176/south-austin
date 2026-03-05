@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Page</title>
+    <title>Meet Our Crew | South Austin Marine</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -18,30 +18,166 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <style>
-
-        .crew-content{
+        .crew-content-box {
             max-width: 65%;
         }
 
+        .crew-grid-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .crew-member-card {
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .crew-image-container {
+            position: relative;
+            padding-top: 120%;
+            /* Portrait aspect ratio */
+            overflow: hidden;
+        }
+
+        .crew-image-container .crew-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .crew-info-body {
+            padding: 20px;
+        }
+
+        .crew-member-name {
+            color: #000;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .crew-member-role {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 20px;
+            opacity: 0.6;
+        }
+
+        .crew-action-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .crew-btn-call {
+            background: #C74D41;
+            color: #FFF;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            padding: 12px 40px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .crew-btn-call:hover {
+            background: #C74D41;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .crew-btn-email {
+            background-color: transparent;
+            color: #000;
+            border: 2px solid #000;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            padding: 12px 40px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .crew-btn-email:hover {
+            background-color: transparent;
+            color: #000;
+            text-decoration: none;
+        }
+
+        @media (max-width: 991px) {
+            .crew-content-box {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .crew-action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .crew-btn-call,
+            .crew-btn-email {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-
-    <secton class="austin-featured">
+    <section class="austin-featured">
         <div class="austin-lg-container">
             <div class="austin-featured-box reverse-col">
 
                 <div class="austin-featured-col">
                     <div class="austin-featured-img">
-                        <img src="./assets/images/wake-shop/wake-img-8.webp" alt="MADIS MARINE">
+                        <img src="./assets/images/crew/staff-img-1.webp" alt="South Austin Marine Crew Team">
                     </div>
                 </div>
 
                 <div class="austin-featured-col">
-                    <div class="content-box crew-content mob-pb">
-                        <h3 class="title-heading">Meet Our Crew</h3>
+                    <div class="content-box crew-content-box mob-pb">
+                        <h1 class="title-heading">Meet Our Crew</h1>
                         <p>
                             The team at South Austin Marine is made up of passionate boating enthusiasts dedicated to
                             delivering exceptional customer experiences both on and off the water. With extensive
@@ -50,15 +186,223 @@
                             unforgettable days on the lake.</p>
 
                         <div class="mt-4 mt-lg-5 sec-btn">
-                            <a id="crew-contact-us" href="/about" class="blue-btn">Visit / Contact Us</a>
+                            <a id="crew-contact-us" href="/contact" class="blue-btn">Visit / Contact Us</a>
                         </div>
                     </div>
                 </div>
 
-
             </div>
         </div>
-    </secton>
+    </section>
+
+    <!-- Crew Grid Section -->
+    <section class="crew-grid-section">
+        <div class="austin-crew-container">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Wayne Black -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-2.webp" alt="Wayne Black - CEO"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Wayne Black</h3>
+                                    <p class="crew-member-role">CEO</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diane Taylor -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-3.webp"
+                                    alt="Diane Taylor - Office Manager / Insurance" class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Diane Taylor</h3>
+                                    <p class="crew-member-role">Office Manager / Insurance</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:diane@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kenneth Black -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-4.webp" alt="Kenneth Black - Sales Manager"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Kenneth Black</h3>
+                                    <p class="crew-member-role">Sales Manager</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Joey Blocher -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-5.webp"
+                                    alt="Joey Blocher - Fishing Sales Consultant" class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Joey Blocher</h3>
+                                    <p class="crew-member-role">Fishing Sales Consultant</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:joey@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nick Lo -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-6.webp" alt="Nick Lo - Marine Consultant"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Nick Lo</h3>
+                                    <p class="crew-member-role">Marine Consultant</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:nick@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brian Gardner -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-7.webp"
+                                    alt="Brian Gardner - Marine Consultant - Lakeside Location" class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Brian Gardner</h3>
+                                    <p class="crew-member-role">Marine Consultant - Lakeside Location</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:brian@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alex Chaves -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-8.webp" alt="Alex Chaves - Logistics Captain"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Alex Chaves</h3>
+                                    <p class="crew-member-role">Logistics Captain</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Susan Berdanhoft -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/dummy.png" alt="Susan Berdanhoft - Marine Consultant"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Susan Berdanhoft</h3>
+                                    <p class="crew-member-role">Marine Consultant</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:susan@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kyle Schust -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="crew-member-card">
+                            <div class="crew-image-container">
+                                <img src="./assets/images/crew/staff-img-9.webp" alt="Kyle Schust - Finance Manager"
+                                    class="crew-img">
+                            </div>
+                            <div class="crew-info-body">
+                                <div>
+                                    <h3 class="crew-member-name">Kyle Schust</h3>
+                                    <p class="crew-member-role">Finance Manager</p>
+                                </div>
+                                <div class="crew-action-buttons">
+                                    <a href="tel:+15121234567" class="crew-btn-call"><i class="fa fa-phone"></i>
+                                        CALL</a>
+                                    <a href="mailto:kyle@example.com" class="crew-btn-email"><i
+                                            class="fa fa-envelope"></i>
+                                        EMAIL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
