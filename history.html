@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our History | South Austin Marine</title>
+    <meta name="description"
+        content="Learn about the history of South Austin Marine, a family-owned boat dealership serving the Austin and Central Texas boating community since 1974.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        /* Custom styles for History Page */
+        .history-rich-text {
+            color: var(--Blk, #000);
+            text-align: justify;
+            font-family: var(--font-LibreBaskerville);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
+
+        .history-page-wrapper {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+            padding-bottom: 50px;
+        }
+
+        .history-header-wrapper {
+            text-align: center;
+            padding: 28px 0 28px 0;
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            margin-bottom: 30px;
+            margin-top: 40px;
+        }
+
+        .history-main-title {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 72px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .history-meta-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .history-meta-item {
+            color: var(--Blk, #000);
+            font-family: var(--font-LibreBaskerville);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+        }
+
+        .history-star {
+            font-size: 20px;
+            margin: 0 15px;
+        }
+
+        .history-hero-frame {
+            border: 4px solid #000;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .history-hero-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .history-section-title {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 48px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .history-section-subtitle {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-LibreBaskerville);
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 30px !important;
+        }
+
+        .history-text-col {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .history-divider-anchor {
+            text-align: center;
+            margin: 40px 0;
+            position: relative;
+        }
+
+        .history-divider-anchor::before,
+        .history-divider-anchor::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 45%;
+            height: 1px;
+            background-color: #000;
+        }
+
+        .history-divider-anchor::before {
+            left: 0;
+        }
+
+        .history-divider-anchor::after {
+            right: 0;
+        }
+
+        .history-anchor-icon {
+            padding: 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .history-cta-box {
+            border: 4px solid #000;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 52px;
+            background: rgba(58, 48, 36, 0.08);
+        }
+
+        .history-cta-title {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 36px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .history-cta-text {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-LibreBaskerville);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+
+        .history-btn-black {
+            background-color: #000;
+            color: #FAF6F0;
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            transition: 0.3s;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 12px 30px 15px 30px;
+        }
+
+        .history-btn-black:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #000;
+        }
+
+        .history-legacy-heading {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 40px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+        }
+
+        .history-collage-frame {
+            border: 4px solid #000;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .history-collage-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .history-caption {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-LibreBaskerville);
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 20px;
+            padding-top: 15px;
+            border-top: 2px solid var(--Blk, #000);
+            margin-top: 16px;
+        }
+
+        .history-side-img-frame {
+            border: 4px solid #000;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .history-cert-section {
+            text-align: center;
+            padding: 28px 0;
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+            margin-bottom: 50px;
+        }
+
+        .history-cert-title {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-Playfair);
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 32px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .history-cert-subtitle {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: var(--font-LibreBaskerville);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .history-cert-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .history-cert-logo {
+            max-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container history-page-wrapper">
+
+        <!-- Page Header -->
+        <header class="history-header-wrapper">
+            <h1 class="history-main-title">South Austin Marine's History</h1>
+            <div class="history-meta-info">
+                <span class="history-meta-item text-left">Est. 1974</span>
+                <i class="fa fa-star history-star"></i>
+                <span class="history-meta-item">Austin, Texas</span>
+                <i class="fa fa-star history-star"></i>
+                <span class="history-meta-item text-right">Family Owned</span>
+            </div>
+        </header>
+
+        <!-- Hero Image -->
+        <div class="history-hero-frame">
+            <img src="./assets/images/history/history-img-1.webp" alt="South Austin Marine Dealership Building"
+                class="history-hero-img">
+        </div>
+
+        <!-- About Dealership Section -->
+        <section class="history-about-dealership">
+            <h2 class="history-section-title">About Our Dealership</h2>
+            <p class="history-section-subtitle">Serving the Central Texas Boating Community for Over 50 Years</p>
+
+            <div class="row">
+                <div class="col-md-6 history-text-col mb-4">
+                    <p class="history-rich-text mb-3">South Austin Marine is a family-owned and operated boat
+                        dealership, proudly serving
+                        Austin and
+                        Central Texas since 1974. As a leading boat dealer in Austin, we are committed to providing
+                        exceptional customer service with a highly trained and courteous team that always prioritizes
+                        your needs.</p>
+
+                    <p class="history-rich-text mb-3">At South Austin Marine, we take pride in being an MRAA/NMMA Certified
+                        Boat Dealership, a
+                        distinction earned by meeting rigorous industry standards. Our certification ensures that we are
+                        dedicated to delivering an outstanding boating experience from the moment you step into our
+                        dealership to long after your boat purchase.</p>
+                </div>
+                <div class="col-md-6 history-text-col mb-4">
+                    <p class="history-rich-text mb-3">Being a Marine Industry Certified Dealership means that we uphold
+                        excellence across
+                        every aspect
+                        of our business, from the quality of our boat sales and service processes to maintaining
+                        state-of-the-art facilities.</p>
+
+                    <p class="history-rich-text">We're not just about selling boats; we're about ensuring complete
+                        customer satisfaction. As a
+                        certified dealer, we adhere to a Consumer Bill of Rights, which is proudly displayed in our
+                        showroom. This guarantees that every customer receives the highest level of transparency,
+                        respect, and care, making South Austin Marine your trusted choice for all your boating needs in
+                        Central Texas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="history-divider-anchor">
+            <img src="./assets/images/history/history-icon.svg" alt="" class="history-anchor-icon">
+        </div>
+
+        <!-- CTA Box 1 -->
+        <div class="history-cta-box">
+            <h3 class="history-cta-title">Start Your Boating Journey Today</h3>
+            <p class="history-cta-text">Visit our showroom or speak with our experienced team</p>
+            <a href="/contact" class="history-btn-black">Contact Us</a>
+        </div>
+
+        <!-- Legacy Section -->
+        <section class="history-legacy-section">
+            <h2 class="history-legacy-heading">A Legacy of Service</h2>
+            <div class="history-collage-frame">
+                <img src="./assets/images/history/history-img-2.webp" alt="Historical South Austin Marine Collage"
+                    class="history-collage-img">
+                    <p class="history-caption">The South Austin Marine Facility</p>
+            </div>
+            
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="history-text-col mb-4">
+                        <p class="history-rich-text mb-3">Since 1974, South Austin Marine has proudly served the Austin
+                            and Central Texas
+                            boating
+                            community as a family-owned dealership. However, the roots of our story reach back even
+                            further. The Black family has been deeply invested in the Austin community since the 1940s,
+                            beginning with a Studebaker dealership.</p>
+                        <p class="history-rich-text mb-3">Over the decades, their dedication and entrepreneurial spirit laid
+                            the foundation for what
+                            would eventually evolve into South Austin Marine as we know it today—nearly 80 years later.
+                        </p>
+                    </div>
+
+                    <div class="history-side-img-frame mt-4">
+                        <img src="./assets/images/history/history-img-4.webp" alt="Black Family Members"
+                            class="history-collage-img">
+                            <p class="history-caption">Pictured: Mike Black and His Two Sons, Wayne and Kenneth Black (Current
+                        Ownership)</p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <div class="history-side-img-frame">
+                        <img src="./assets/images/history/history-img-3.webp" alt="Wayne and Kenneth Black"
+                            class="history-collage-img">
+
+                        <p class="history-caption">Pictured: Mike Black, The Original Owner, Aboard His WellCraft
+                            SunCruiser
+                            288 In 1975</p>
+                    </div>
+
+
+                    <div class="history-text-col mt-4">
+                        <p class="history-rich-text mb-3">Our mission has always been simple: to deliver top-notch
+                            customer service and
+                            ensure your
+                            boating experience is nothing short of exceptional. With a courteous and highly skilled
+                            team, we strive to make every moment on the water unforgettable.</p>
+                        <p class="history-rich-text mb-3">As a family with deep ties to the community, we are honored to
+                            continue serving Austin with
+                            the same values and commitment that have guided us for generations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="history-cert-section">
+            <h4 class="history-cert-title">MRAA/NMMA Certified Boat Dealership</h4>
+            <p class="history-cert-subtitle">Excellence in Boating Since 1974</p>
+            <div class="history-cert-logos">
+                <img src="./assets/images/history/history-img-5.webp" alt="CSI Logo" class="history-cert-logo">
+                <img src="./assets/images/history/history-img-6.webp" alt="Marine Industry Certified Dealership"
+                    class="history-cert-logo">
+                <img src="./assets/images/history/history-img-7.webp" alt="BBB Accredited Business"
+                    class="history-cert-logo">
+            </div>
+        </section>
+
+        <!-- CTA Box 2 -->
+        <div class="history-cta-box">
+            <h3 class="history-cta-title">Experience the South Austin Marine Difference</h3>
+            <p class="history-cta-text">Three generations of expertise, one commitment to excellence</p>
+            <a href="/contact" class="history-btn-black">Contact Us</a>
+        </div>
+
+    </div>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
