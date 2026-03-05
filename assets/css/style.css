@@ -2936,6 +2936,67 @@ ul {
   flex-shrink: 0;
 }
 
+.what-we-rig {
+  background-color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.rig-main-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.rig-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px 25px;
+  height: 100%;
+  border: none;
+}
+
+.rig-card-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.rig-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rig-list li {
+  color: #364153;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+
+}
+
+.rig-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  background-color: #d9534f;
+  border-radius: 50%;
+}
+
 .reason-title {
   color: #000;
   font-family: Manrope;
