@@ -1827,8 +1827,12 @@ ul {
   display: flex;
   padding-top: 40px;
   padding-bottom: 40px;
+  align-items: center;
 }
-
+.austin-featured-col .content-box{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 .austin-featured-col {
   width: 50%;
 }
@@ -1879,6 +1883,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 16px;
   width: 100%;
+  opacity: 0.6;
 }
 
 .title-heading {
@@ -3008,6 +3013,129 @@ ul {
   margin-bottom: 10px;
 }
 
+/* storage page css start here */
+
+.content-title {
+        color: #222;
+        font-family: Manrope;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+    .custom-rounded-img {
+        border-radius: 4px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .reserve-card-img {
+        position: relative;
+        padding-top: 45%;
+    }
+
+    .reserve-card-img img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .pricing-main-title {
+        color: var(--Blk, #000);
+        font-family: Manrope;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+    }
+
+    .price-card {
+        background-color: #003a70;
+        color: #ffffff;
+        padding: 2.5rem 2rem;
+        border-radius: 12px;
+    }
+
+    .currency-amount {
+        color: var(--Wt, #FFF);
+        font-family: Manrope;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 72px;
+    }
+
+    .billing-cycle {
+        color: var(--Wt, #FFF);
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .price-description {
+        color: var(--Wt, #FFF);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .terms-list {
+        margin-left: 5px;
+    }
+
+    .term-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        color: var(--Blk, #000);
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .check-icon {
+        display: inline-block;
+        width: 20px;
+        height: 12px;
+        border-left: 2px solid #003a70;
+        border-bottom: 2px solid #003a70;
+        transform: rotate(-45deg);
+        margin-right: 15px;
+        margin-top: 5px;
+        flex-shrink: 0;
+    }
+
+    .notice-box {
+        border-radius: 10px;
+        background: #F3F4F6;
+        color: var(--Blk, #000);
+        font-family: Manrope;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .storage-quality-wrapper {
+        padding: 64px 0 80px 0;
+        margin-top: 40px;
+    }
+
 @media (max-width: 1600px) {
   .spring-content-box {
     max-width: calc(100% - 25%);
@@ -3236,6 +3364,10 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .storage-quality-wrapper {
+    padding: 40px 0 40px 0;
+    margin-top: 10px;
+}
   .reason-title {
     font-size: 20px;
   }
@@ -3532,6 +3664,11 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .featured-subtitle {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
   .feature-icon-wrapper {
     margin-bottom: 0;
   }
