@@ -3887,9 +3887,9 @@ ul {
 
 .reviews-card {
   border-radius: 10px;
-border: 1px solid var(--D9, #D9D9D9);
-background: #FFF;
-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  border: 1px solid var(--D9, #D9D9D9);
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
   padding: 48px 40px;
 }
 
@@ -3924,6 +3924,149 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0
 
 .reviews-qoutation-icon {
   margin-bottom: 12px;
+}
+
+/* reviews page css start here */
+
+.stats-bar {
+  background-color: var(--testimonial-red);
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.stat-item h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: Michroma;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  color: #FFF;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.testimonial-intro {
+  padding: 80px 0 40px;
+  text-align: center;
+}
+
+.intro-title {
+  font-family: var(--font-Michroma);
+  font-size: 32px;
+  color: var(--Soft-black);
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+
+.intro-text {
+  font-family: var(--font-Manrope);
+  font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #666;
+  line-height: 1.6;
+}
+
+.testimonials-section {
+  padding-bottom: 80px;
+}
+
+.card-columns {
+  column-count: 3;
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 991px) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+.testimonial-card {
+  border-radius: 10px;
+  border: 1px solid var(--D9, #D9D9D9);
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  padding: 48px 40px;
+  margin-bottom: 30px;
+}
+
+.reviews-rating-container {
+  max-width: calc(100% - 50%);
+  margin: 0 auto;
+}
+
+.stars {
+  color: var(--star-color);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.stars i {
+  margin-right: 2px;
+}
+
+.testimonial-body {
+  margin-bottom: 25px;
+}
+
+.testimonial-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.testimonial-footer {
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.author-name {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.author-location {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 @media (max-width: 1600px) {
@@ -4029,8 +4172,18 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0
 }
 
 @media (max-width: 1330px) {
+  .stat-item h2 {
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 2px;
+  }
+
   .career-modal-wrapper {
     max-width: 90%;
+  }
+
+  .reviews-rating-container {
+    max-width: calc(100% - 35%);
   }
 
   .card-service-title {
@@ -4057,6 +4210,10 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0
 }
 
 @media (max-width: 1200px) {
+  .testimonial-card {
+    padding: 25px 25px;
+  }
+
   .career-card-btn {
     flex-wrap: wrap;
     gap: 10px;
@@ -4185,6 +4342,14 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0
 }
 
 @media (max-width: 991px) {
+  .card-columns {
+    column-count: 2;
+  }
+
+  .reviews-rating-container {
+    max-width: calc(100% - 20%);
+  }
+
   .job-detail-main-title {
     font-size: 30px;
     line-height: 40px;
@@ -4667,6 +4832,9 @@ box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0
 }
 
 @media (max-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
   .crew-action-buttons {
     flex-direction: column;
     align-items: center;

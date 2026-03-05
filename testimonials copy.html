@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Stories | South Austin Marine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        /* Testimonials Page Specific Styles */
+        :root {
+            --testimonial-bg: #fff;
+            --testimonial-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            --testimonial-red: #C74D41;
+            --star-color: #FCE532;
+        }
+
+        .stats-bar {
+            background-color: var(--testimonial-red);
+            padding: 40px 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        .stat-item h2 {
+            color: #FFF;
+            text-align: center;
+            font-family: Michroma;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .stat-item p {
+            color: #FFF;
+            text-align: center;
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+
+        .testimonial-intro {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .intro-title {
+            font-family: var(--font-Michroma);
+            font-size: 32px;
+            color: var(--Soft-black);
+            margin-bottom: 25px;
+            text-transform: capitalize;
+        }
+
+        .intro-text {
+            font-family: var(--font-Manrope);
+            font-size: 16px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .testimonials-section {
+            padding-bottom: 80px;
+        }
+
+        .card-columns {
+            column-count: 3;
+            gap: 30px;
+        }
+
+        @media (max-width: 1200px) {
+            .card-columns {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .card-columns {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .card-columns {
+                column-count: 1;
+            }
+        }
+
+        .testimonial-card {
+            border-radius: 10px;
+            border: 1px solid var(--D9, #D9D9D9);
+            background: #FFF;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+            padding: 48px 40px;
+            margin-bottom: 30px;
+        }
+
+        .reviews-rating-container {
+            max-width: calc(100% - 50%);
+            margin: 0 auto;
+        }
+
+        .stars {
+            color: var(--star-color);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .stars i {
+            margin-right: 2px;
+        }
+
+        .testimonial-body {
+            margin-bottom: 25px;
+        }
+
+        .testimonial-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-footer {
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .author-name {
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        .author-location {
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="common-header">
+        <img src="./assets/images/testimonial/testimponial-header.webp" class="page-banner-img" alt="">
+
+        <div class="common-header-content">
+            <p class="common-banner-subtitle">Testimonials</p>
+            <h1 class="common-banner-title mt-3 mb-4">Customer Stories</h1>
+            <p class="banner-rich-text">Don't just take our word for it. Hear from the boat owners who trust South
+                Austin Marine for their sales, service, and storage needs.</p>
+            <a id="home-more-about-us" href="/about" class="btn-global-rd">Request Storage</a>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="reviews-rating-container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="stat-item">
+                            <h2>500+</h2>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="stat-item">
+                            <h2>50+</h2>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-item">
+                            <h2>98%</h2>
+                            <p>Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="central-content">
+        <h2 class="central-title mb-3">Real Stories from Real Customers</h2>
+        <p class="mb-4">At our family-owned dealership, customer feedback is at the heart of everything we do. We
+            believe that every testimonial helps us grow and continue providing the personalized service our community
+            has come to trust. Browse through our customer testimonials to see why families return to us for all their
+            boating needs.
+        </p>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="testimonials-section">
+        <div class="austin-container">
+            <div class="container-fluid">
+                <div class="card-columns">
+                    <!-- Card 1 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "Nick at South Austin Marine was so helpful in our boat buying experience! He welcomed all
+                            our
+                            questions and felt completely transparent and open. They will share all details on previous
+                            service, which was so reassuring that they would make sure we were getting a great boat and
+                            we'd
+                            be completely happy and comfortable with our purchase. This is definitely a place you will
+                            feel
+                            treated like family and that you can trust in your boat buying experience! Thank you again
+                            so
+                            much Nick! We appreciate you!"
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Sarah</span>
+                            <span class="author-location">Houston, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "I couldn't be happier with my Supra SL450 from Nick at South Austin Marine! From start to
+                            finish, Nick was incredibly knowledgeable, helpful, and made the entire process smooth and
+                            stress-free. He took the time to answer all my questions, ensuring I got exactly what I
+                            wanted
+                            in a wake boat.
+                            <br><br>
+                            The boat itself is an absolute dream! Can't wait to spend some time on the water.
+                            <br><br>
+                            Beyond the boat, the Wake Shop at South Austin Marine is top-notch. The staff is
+                            super-friendly,
+                            always ready to help with gear, upgrades, or just talking shop. I genuinely enjoy hanging
+                            out at
+                            the dealership because the vibe is great, and the whole team makes you feel like part of the
+                            family.
+                            <br><br>
+                            If you're looking for a premium boat, buying experience, Nick and the crew at South Austin
+                            Marine are the ones to trust. I highly recommend!"
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Linus</span>
+                            <span class="author-location">Austin, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "My first experience with service at South Austin Marine was very good! Justin, Linda and
+                            Daniell were very communicative throughout the process. I particularly appreciate the use of
+                            texting for updates and responses to questions."
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Mary</span>
+                            <span class="author-location">Austin, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "South Austin Marine made my first boat purchase surprisingly easy. Buying my first boat
+                            purchase I thought it would be a lot more stressed & time consuming than it was but they
+                            walked
+                            me through every step and I was able to get out on the lake with my new boat! Positive
+                            feelings
+                            being on your new boat so shout out to Nick at SAM for answering all my questions and
+                            providing
+                            great customer service. Would highly recommend.
+                            <br><br>
+                            They also have a bunch of wake gear in store so I was able to pick up a board, new wake surf
+                            board!"
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Frederick</span>
+                            <span class="author-location">Houston, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 5 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "I'd like to state that Brian Gardner did an excellent job with me and my wife as we shopped
+                            at
+                            South Austin Marine for the past 3 months. Although we had a difficult time deciding what we
+                            wanted a larger or another pontoon boat. Brian was always more than willing to help and
+                            answer
+                            all our annoying questions as we visited 3 times and called numerous times from the Fort
+                            Worth
+                            area. We finally settled for a 2018 pontoon that you guys did not have in stock, only after
+                            we
+                            were minutes from making a deal with Brian on a 2022 Regal 2300. He worked hard to make us
+                            an
+                            unbelievable deal which we only turned down when a specific boat came available in Fort
+                            Worth.
+                            He was a true gentleman and professional throughout and service like this does not come
+                            along
+                            that often. He is an indicator of your overall sales force and staff you guys are head and
+                            shoulders above most dealerships. Thanks again Brian I will be glad to send South Austin
+                            Marine
+                            some leads in the future!"
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Randy</span>
+                            <span class="author-location">Fort Worth, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 6 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "Very nice selection on boats! Page was very helpful in picking out the perfect surfboard."
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Michael</span>
+                            <span class="author-location">Austin, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 7 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "Purchased a boat from these guys in 2022. For the past two years they continued to go above
+                            and
+                            beyond. Shout out to Justin in the service department for always going above and beyond to
+                            put
+                            customers first. World class service. I highly recommend."
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Kendall</span>
+                            <span class="author-location">Austin, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 8 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "I purchased a used Boat from Greg at South Austin Marine. He was an excellent salesman.
+                            Greg
+                            assisted me with the purchase and took time to show me how each item worked on the boat. He
+                            also
+                            showed me each department of the store and introduced me to the staff. I would highly
+                            recommend
+                            buying from South Austin Marine."
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Greg</span>
+                            <span class="author-location">Round Rock, TX</span>
+                        </footer>
+                    </article>
+
+                    <!-- Card 9 -->
+                    <article class="testimonial-card">
+                        <div class="stars">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <div class="testimonial-body">
+                            "For years my husband has wanted a fishing boat he could use on lakes and the coast. Thanks
+                            to
+                            Joey at South Austin Marine, I was able to find the perfect new boat with a great profile
+                            and a
+                            4-stroke Yamaha motor. Even better, Joey delivered the boat to Oyster Landing on the evening
+                            of
+                            our anniversary (2 days after the purchase), so I was able to surprise my husband after
+                            dinner
+                            at Hula Hut. Joey even took care of getting the boat back to storage at South Austin Marine
+                            (where we keep it for a reasonable monthly fee). A memorable evening - one that I would
+                            never
+                            have dreamed up without Joey's great ideas and follow through in addition to the sales
+                            experience for surpassing my expectations, everyone I have dealt with at SAM has been
+                            extraordinarily helpful and pleasant - they all seem to truly love what they're doing. David
+                            and
+                            his team have gone the extra mile in helping us get comfortable with the storage situation
+                            as
+                            well for a unit that will fit our new boat. We could not ask for a better sales experience
+                            and
+                            support! Highly recommend!"
+                        </div>
+                        <footer class="testimonial-footer">
+                            <span class="author-name">Anonymous</span>
+                            <span class="author-location">Austin, TX</span>
+                        </footer>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
