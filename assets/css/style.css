@@ -58,7 +58,7 @@
   line-height: 24px;
   display: block;
   width: 100%;
-  height: calc(1.5em + .75rem + 2px);
+  height: 48px;
   padding: .375rem .75rem;
 }
 .custom-textarea {
@@ -75,7 +75,32 @@
   width: 100%;
   padding: .375rem .75rem;
 }
-
+.custom-textarea::placeholder{
+  color: var(--Blk, #000);
+  font-family: var(--font-Manrope);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.custom-textarea::placeholder{
+  color: var(--Blk, #000);
+  font-family: var(--font-Manrope);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.custom-textarea:focus{
+  outline: none;
+  border: 1px solid var(--gray-color, #D9D9D9);
+  box-shadow: none;
+}
+.custom-form-control:focus{
+  outline: none;
+  border: 1px solid var(--gray-color, #D9D9D9);
+  box-shadow: none;
+}
 /* form css ends here */
 
 /* Common css start here  */
