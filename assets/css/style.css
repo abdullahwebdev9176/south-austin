@@ -61,6 +61,7 @@
   height: 48px;
   padding: .375rem .75rem;
 }
+
 .custom-textarea {
   border-radius: 8px;
   border: 1px solid var(--gray-color, #D9D9D9);
@@ -75,7 +76,8 @@
   width: 100%;
   padding: .375rem .75rem;
 }
-.custom-textarea::placeholder{
+
+.custom-textarea::placeholder {
   color: var(--Blk, #000);
   font-family: var(--font-Manrope);
   font-size: 16px;
@@ -83,7 +85,8 @@
   font-weight: 400;
   line-height: 24px;
 }
-.custom-textarea::placeholder{
+
+.custom-textarea::placeholder {
   color: var(--Blk, #000);
   font-family: var(--font-Manrope);
   font-size: 16px;
@@ -91,16 +94,40 @@
   font-weight: 400;
   line-height: 24px;
 }
-.custom-textarea:focus{
+
+.custom-textarea:focus {
   outline: none;
   border: 1px solid var(--gray-color, #D9D9D9);
   box-shadow: none;
 }
-.custom-form-control:focus{
+
+.custom-form-control:focus {
   outline: none;
   border: 1px solid var(--gray-color, #D9D9D9);
   box-shadow: none;
 }
+
+.form-sec {
+  padding: 64px 20px 80px 20px;
+  background: #F7F7F7;
+}
+
+.common-form-wrapper {
+  max-width: calc(100% - 78%);
+  min-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-inner-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 /* form css ends here */
 
 /* Common css start here  */
@@ -4778,6 +4805,16 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .form-sec {
+    padding: 50px 20px 60px 20px;
+    background: #F7F7F7;
+  }
+
+  .form-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
   .job-detail-main-title {
     font-size: 22px;
     line-height: 28px;
@@ -5106,6 +5143,13 @@ ul {
 }
 
 @media (max-width: 450px) {
+  .common-form-wrapper {
+    max-width: 100%;
+    min-width: unset;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .austin-crew-container {
     max-width: 100%;
     padding-left: 20px;
