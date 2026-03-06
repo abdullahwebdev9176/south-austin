@@ -167,21 +167,36 @@
                         <h2 class="form-main-title text-uppercase mb-2">Employment Application</h2>
                         <h3 class="form-job-title mb-1">Sales Professional/Marine Consultant</h3>
                         <p class="job-location mb-3">
-                                    <span class="fa fa-map-marker"></span> Austin, TX
-                                </p>
+                            <span class="fa fa-map-marker"></span> Austin, TX
+                        </p>
 
                         <form class="app-form">
-                            <div class="form-group mb-3">
-                                <input type="text" class="form-control custom-input" placeholder="First Name">
+                            <div class="form-group">
+                                <label for="first_name" class="sr-only">First Name*</label>
+                                <input name="first_name" class="custom-form-control require_check mb-3"
+                                    placeholder="First Name*" type="text" id="first_name">
+                                <div class="field-error" id="error_first_name"></div>
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="text" class="form-control custom-input" placeholder="Last Name">
+
+                            <div class="form-group">
+                                <label for="last_name" class="sr-only">Last Name*</label>
+                                <input name="last_name" class="custom-form-control require_check mb-3"
+                                    placeholder="Last Name*" type="text" id="last_name">
+                                <div class="field-error" id="error_last_name"></div>
                             </div>
-                            <div class="form-group mb-3">
-                                <input type="email" class="form-control custom-input" placeholder="Email">
+
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Email*</label>
+                                <input name="email" class="custom-form-control require_check mb-3" placeholder="Email*"
+                                    type="email" id="email">
+                                <div class="field-error" id="error_email"></div>
                             </div>
-                            <div class="form-group mb-4">
-                                <input type="tel" class="form-control custom-input" placeholder="Phone">
+
+                            <div class="form-group">
+                                <label for="phone" class="sr-only">Phone*</label>
+                                <input name="phone" class="custom-form-control require_check mb-3" placeholder="Phone*"
+                                    type="tel" id="phone">
+                                <div class="field-error" id="error_phone"></div>
                             </div>
 
                             <div class="input-group mb-5 custom-file-group">
