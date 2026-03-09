@@ -88,14 +88,59 @@
             font-weight: 400;
             line-height: 24px;
         }
+
+        .brands-represented {
+            background-color: #ffffff;
+            border-left: 4px solid #007bff;
+        }
+
+        .brand-heading {
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        .logo-item img {
+            max-height: 45px;
+            width: auto;
+            filter: grayscale(0);
+            transition: transform 0.3s ease;
+            padding: 4px;
+            max-width: 160px;
+            width: 100%;
+        }
+
+        .logo-item img:hover {
+            transform: scale(1.05);
+        }
+
         @media (max-width: 991px) {
-            .event-header-title{
-font-size: 30px;
-        line-height: 35px;
+            .brand-heading {
+                text-align: center;
+                margin-bottom: 30px;
             }
         }
 
-        
+        @media (max-width: 991px) {
+            .event-header-title {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+
+
         @media (max-width: 768px) {
             .event-header {
                 flex-direction: column;
@@ -104,6 +149,16 @@ font-size: 30px;
 
             .event-header h2 {
                 margin-bottom: 15px !important;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .logo-item img {
+                padding: 4px 10px;
+            }
+
+            .logo-item {
+                min-height: 80px;
             }
         }
     </style>
@@ -120,7 +175,7 @@ font-size: 30px;
 
         <div class="austin-container px-md-4 d-flex flex-column flex-lg-row justify-content-between align-items-center">
             <h2 class="text-white event-header-title central-title mb-0">Event title Boat Show Promotion</h2>
-            <a href="#" class="event-btn btn-global-rd mt-4 mt-lg-0">Register</a>
+            <a href="javascript:void(0)" class="event-btn btn-global-rd mt-4 mt-lg-0">Register</a>
         </div>
 
     </div>
@@ -195,6 +250,106 @@ font-size: 30px;
             </div>
         </div>
     </section>
+
+    <section class="brands-represented py-5 border-top">
+        <div class="austin-container px-md-4">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                        <h2 class="brand-heading">BRANDS REPRESENTED</h2>
+                    </div>
+
+                    <div class="col-lg-9 col-md-12">
+                        <div class="row no-gutters align-items-center">
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-1.webp" alt="Avalon"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-2.webp" alt="Formula"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-3.webp" alt="Moomba"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-4.svg" alt="SCB"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-5.webp" alt="Pathfinder"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-6.webp" alt="Hewes"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-8.svg" alt="Shallow Sport"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                            <div class="col-6 col-md-3 logo-item">
+                                <a href="javascript:void(0)">
+                                    <img src="./assets/images/event-details/brand-logo-9.webp" alt="Blackfin"
+                                        class="img-fluid">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="owl-carousel gallery-carousel owl-theme">
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+    </div>
 
     <div class="form-sec">
 
