@@ -201,7 +201,9 @@
   height: 100%;
   object-fit: cover;
 }
-
+.positioned-banner {
+    object-position: -50% 100%;
+}
 .common-header::after {
   content: "";
   position: absolute;
@@ -4979,6 +4981,9 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .positioned-banner{
+    object-position: unset;
+  }
   .form-sec {
     padding: 50px 20px 60px 20px;
     background: #F7F7F7;
