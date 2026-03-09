@@ -5160,6 +5160,12 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .event-form-sec {
+    padding: 50px 0 0 0;
+}
+ .event-form-sec .form-sec{
+  
+ }
   .form-wrapper {
     padding: 40px 20px 40px 20px;
   }

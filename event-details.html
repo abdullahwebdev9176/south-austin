@@ -126,7 +126,19 @@
             transform: scale(1.05);
         }
 
+        .event-form {
+            align-items: unset;
+        }
+
+        .event-form-sec {
+            padding: 104px 0;
+        }
+
         @media (max-width: 991px) {
+            .event-form-sec {
+                padding: 50px 0;
+            }
+
             .brand-heading {
                 text-align: center;
                 margin-bottom: 30px;
@@ -251,6 +263,32 @@
         </div>
     </section>
 
+    <div class="owl-carousel gallery-carousel owl-theme">
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
+                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+            </a>
+        </div>
+    </div>
+
     <section class="brands-represented py-5 border-top">
         <div class="austin-container px-md-4">
             <div class="container-fluid">
@@ -325,88 +363,91 @@
         </div>
     </section>
 
-    <div class="owl-carousel gallery-carousel owl-theme">
-        <div class="item">
-            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
-            </a>
-        </div>
 
-        <div class="item">
-            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
-            </a>
-        </div>
 
-        <div class="item">
-            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
-            </a>
-        </div>
+    <section class="bg-grey event-form-sec">
+        <secton class="austin-featured">
+            <div class="austin-sm-container">
+                <div class="austin-featured-box px-3 px-md-0 event-form">
 
-        <div class="item">
-            <a href="./assets/images/dummy.png" class="fancybox" data-fancybox="gallery">
-                <img src="./assets/images/dummy.png" alt="MADIS MARINE">
-            </a>
-        </div>
-    </div>
+                    <div class="austin-featured-col pr-40">
+                        <div class="austin-featured-img">
+                            <img src="./assets/images/dummy.png" alt="MADIS MARINE">
+                        </div>
+                    </div>
 
-    <div class="form-sec">
+                    <div class="austin-featured-col pl-40">
+                        <div class="form-sec">
 
-        <div class="form-header text-center mb-4">
-            <h3 class="vantage-form-title text-center">Contact The WakeShop</h3>
-            <p class="mb-3">For any questions or to place a special order, please contact us via the form, email, or
-                give us call.</p>
-            <div class="text-center form-contact-box">
-                <p>Email: <a href="mailto:katie@southaustinmarine.com">katie@southaustinmarine.com</a></p>
-                <ul class="contact-list">
-                    <li class="contact-list-item">Call:<a href="tel:+15128922432"> 512-892-2432-212</a></li>
-                    <li class="contact-list-item">Text:<a href=""> 512-892-2432</a></li>
-                </ul>
+                            <div class="form-header text-center mb-4">
+                                <h3 class="form-title text-center">Registration</h3>
+                            </div>
+                            <div class="common-form-wrapper">
+
+                                <div class="form-group">
+                                    <label for="first_name" class="sr-only">First Name*</label>
+                                    <input name="first_name" class="custom-form-control require_check mb-3"
+                                        placeholder="First Name*" type="text" id="first_name">
+                                    <div class="field-error" id="error_first_name"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="last_name" class="sr-only">Last Name*</label>
+                                    <input name="last_name" class="custom-form-control require_check mb-3"
+                                        placeholder="Last Name*" type="text" id="last_name">
+                                    <div class="field-error" id="error_last_name"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Email*</label>
+                                    <input name="email" class="custom-form-control require_check mb-3"
+                                        placeholder="Email*" type="email" id="email">
+                                    <div class="field-error" id="error_email"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="sr-only">Phone*</label>
+                                    <input name="phone" class="custom-form-control require_check mb-3"
+                                        placeholder="Phone*" type="tel" id="phone">
+                                    <div class="field-error" id="error_phone"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="party" class="sr-only">Party*</label>
+                                    <input name="party" class="custom-form-control require_check mb-3"
+                                        placeholder="Party*" type="text" id="party">
+                                    <div class="field-error" id="error_party"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="interested_in" class="sr-only">Boat You are interested in*</label>
+                                    <input name="interested_in" class="custom-form-control require_check mb-3"
+                                        placeholder="Boat You are interested in*" type="text" id="interested_in">
+                                    <div class="field-error" id="error_interested_in"></div>
+                                </div>
+
+                                <input type="text" name="honeypot" id="honeypot" style="display: none;">
+
+                                <div class="form-group">
+                                    <textarea name="message" id="message" class="custom-textarea mb-3"
+                                        placeholder="Additional Comments"></textarea>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button class="blue-btn">Submit</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-        </div>
-        <div class="common-form-wrapper">
+        </secton>
+    </section>
 
-            <div class="form-group">
-                <label for="first_name" class="sr-only">First Name*</label>
-                <input name="first_name" class="custom-form-control require_check mb-3" placeholder="First Name*"
-                    type="text" id="first_name">
-                <div class="field-error" id="error_first_name"></div>
-            </div>
 
-            <div class="form-group">
-                <label for="last_name" class="sr-only">Last Name*</label>
-                <input name="last_name" class="custom-form-control require_check mb-3" placeholder="Last Name*"
-                    type="text" id="last_name">
-                <div class="field-error" id="error_last_name"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="email" class="sr-only">Email*</label>
-                <input name="email" class="custom-form-control require_check mb-3" placeholder="Email*" type="email"
-                    id="email">
-                <div class="field-error" id="error_email"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="phone" class="sr-only">Phone*</label>
-                <input name="phone" class="custom-form-control require_check mb-3" placeholder="Phone*" type="tel"
-                    id="phone">
-                <div class="field-error" id="error_phone"></div>
-            </div>
-
-            <input type="text" name="honeypot" id="honeypot" style="display: none;">
-
-            <div class="form-group">
-                <textarea name="message" id="message" class="custom-textarea mb-3" placeholder="Message"></textarea>
-            </div>
-
-            <div class="text-center mt-4">
-                <button class="blue-btn">Submit</button>
-            </div>
-
-        </div>
-    </div>
 
     <!-- JS Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
