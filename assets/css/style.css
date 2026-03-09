@@ -26,6 +26,13 @@
   --font-Inter: "Inter", sans-serif;
   --font-Playfair: "Playfair Display", serif;
   --font-LibreBaskerville: "Libre Baskerville", serif;
+  --font-arial: "Arial";
+}
+
+
+@font-face {
+  font-family: 'Arial-regular';
+  src: url('../fonts/arial/Arial-regular.ttf');
 }
 
 /* form css start here */
