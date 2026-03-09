@@ -158,27 +158,31 @@
   font-weight: 700;
   line-height: 24px;
 }
-.contact-list{
+
+.contact-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
 }
-.contact-list-item{
+
+.contact-list-item {
   position: relative;
   padding-right: 20px;
 }
-.contact-list-item + .contact-list-item::after{
+
+.contact-list-item+.contact-list-item::after {
   position: absolute;
   content: '';
-  top:50%;
+  top: 50%;
   left: -10px;
   transform: translateY(-50%);
   background: #000;
   width: 2px;
   height: 15px;
 }
+
 /* form css ends here */
 
 /* Common css start here  */
@@ -4248,6 +4252,108 @@ ul {
   margin-top: -88px;
 }
 
+.location-items-list {
+  display: flex;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.location-items {
+  position: relative;
+  list-style: none;
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding-right: 20px;
+}
+
+.location-items+.location-items::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: -10px;
+  width: 2px;
+  height: 15px;
+  background: #000;
+  transform: translateY(-50%);
+}
+
+.addres-bar {
+  display: flex;
+  gap: 15px;
+}
+
+.addres-bar a:nth-child(1) {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.addres-bar a:nth-child(2) {
+  color: var(--Blue, #00386E);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.phone-number {
+  color: var(--Reddish, #C74D41);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  display: block;
+  margin: 16px 0;
+}
+
+.phone-number:hover {
+  color: var(--Reddish, #C74D41);
+}
+
+.hours-sec ul {
+  padding-left: 0;
+}
+
+.hours-sec ul li {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  list-style: none;
+}
+
+.hours-title {
+  color: var(--Blk, #000);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.location-subtitle {
+  color: rgba(0, 0, 0, 0.60);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 @media (max-width: 1600px) {
   .career-modal-wrapper {
     max-width: 80%;
@@ -4261,11 +4367,19 @@ ul {
     max-width: calc(100% - 25%);
     margin: 0 auto;
   }
+
+  .form-wrapper {
+    padding: 60px 60px 70px 60px;
+  }
 }
 
 
 
 @media (max-width: 1500px) {
+  .form-wrapper {
+    padding: 60px 60px 70px 60px;
+  }
+
   .why-finance-section {
     padding: 40px 0 80px;
   }
@@ -4525,6 +4639,15 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .contact-form-section {
+    margin-top: 58px;
+  }
+
+  .hero-text-col {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
   .card-columns {
     column-count: 2;
   }
@@ -5025,6 +5148,10 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .form-wrapper {
+    padding: 40px 20px 40px 20px;
+  }
+
   .card-columns {
     column-count: 1;
   }
