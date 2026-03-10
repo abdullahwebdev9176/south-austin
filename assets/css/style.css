@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -27,6 +28,7 @@
   --font-Playfair: "Playfair Display", serif;
   --font-LibreBaskerville: "Libre Baskerville", serif;
   --font-arial: "Arial";
+  --font-Montserrat: "Montserrat", sans-serif;
 }
 
 
@@ -4158,23 +4160,6 @@ ul {
   gap: 30px;
 }
 
-@media (max-width: 1200px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
-
-@media (max-width: 991px) {
-  .card-columns {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 575px) {
-  .card-columns {
-    column-count: 1;
-  }
-}
 
 .testimonial-card {
   border-radius: 10px;
@@ -4459,6 +4444,272 @@ ul {
   padding: 104px 0;
 }
 
+/* brand page css start here */
+
+.robalo-hero {
+  position: relative;
+  padding-top: 49%;
+}
+
+.robalo-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.robalo-hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.robalo-hero-overlay-boat {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  width: 45%;
+  z-index: 2;
+}
+
+.robalo-hero-overlay-boat .boat-img {
+  width: 100%;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6));
+  transform: rotate(-15deg);
+}
+
+.robalo-hero-content {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  max-width: 900px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.robalo-hero-title {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.robalo-hero-subtitle {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.16px;
+}
+
+/* Action Bar */
+.robalo-action-bar {
+  background: #fff;
+  padding: 25px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.robalo-action-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.robalo-action-btns {
+  display: flex;
+  gap: 20px;
+  width: calc(100% - 30%);
+  padding: 28px 0;
+}
+
+.robalo-brand-logo-box {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 0 0 auto;
+}
+
+.robalo-brand-logo-box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.robalo-black-btn {
+  background: #000;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.4s;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  padding: 16px 30px;
+}
+
+.robalo-black-btn:hover {
+  opacity: 0.85;
+  color: #fff;
+  text-decoration: none;
+}
+
+.robalo-brand-logo-box .logo-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Lineup Section */
+.robalo-lineup-section {
+  padding: 80px 0 64px 0;
+}
+
+.robalo-sec-title {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.robalo-lineup-item {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.row .col-md-3:last-child .robalo-lineup-item {
+  border-right: none;
+}
+
+.brand-border {
+  border-right: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.brand-border:first-child {
+  border-left: 2px solid #eee;
+}
+
+.brand-border:last-child {
+  border-right: 2px solid #eee;
+}
+
+.robalo-lineup-item .lineup-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.robalo-lineup-item:hover .lineup-img {
+  transform: translateY(-5px);
+}
+
+.robalo-lineup-name {
+  color: #333;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+.brand-banner-content {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+}
+
+.brand-banner {
+  border-bottom: 1px solid var(--D9, #D9D9D9);
+  background: #FFF;
+  margin-bottom: 20px;
+}
+
+.brand-subtitle {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.brand-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 100%;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.brand-gallery-card {
+  width: calc(100% / 3 - 2px);
+}
+
+.brand-gallery-img {
+  position: relative;
+  padding-top: 50%;
+}
+
+.brand-gallery-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inven-sec-header {
+  padding-top: 64px;
+  padding-bottom: 40px;
+}
+
+.inven-sec-title {
+  color: #333;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.5px;
+}
+
 @media (max-width: 1600px) {
   .career-modal-wrapper {
     max-width: 80%;
@@ -4481,6 +4732,10 @@ ul {
 
 
 @media (max-width: 1500px) {
+  .robalo-lineup-section {
+    padding: 40px 0 64px 0;
+  }
+
   .form-wrapper {
     padding: 60px 60px 70px 60px;
   }
@@ -4612,6 +4867,20 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .robalo-hero-title {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 3px;
+  }
+
+  .brand-banner-content {
+    bottom: 80px;
+  }
+
+  .card-columns {
+    column-count: 3;
+  }
+
   .testimonial-card {
     padding: 25px 25px;
   }
@@ -4744,6 +5013,64 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .card-columns {
+    column-count: 2;
+  }
+
+  .brand-gallery {
+    display: none;
+  }
+
+  .robalo-sec-title {
+    text-align: center;
+  }
+
+  .robalo-hero-overlay-boat {
+    position: relative;
+    width: 80%;
+    top: 0;
+    right: 0;
+    margin: 40px auto 0;
+  }
+
+  .robalo-hero-content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .robalo-hero-title {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 2.5px;
+    margin-bottom: 25px;
+  }
+
+  .brand-banner {
+    padding-bottom: 40px;
+  }
+
+  .robalo-action-inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .robalo-action-btns {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .robalo-brand-logo-box {
+    margin: 0 auto;
+  }
+
+  .robalo-black-btn {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+
   .event-form-sec {
     padding: 50px 0;
   }
@@ -5280,11 +5607,33 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .card-columns {
+    column-count: 1;
+  }
+
   .event-form-sec {
     padding: 50px 0 0 0;
   }
 
-  .event-form-sec .form-sec {}
+  .brand-border:first-child {
+    border-left: unset
+  }
+
+  .brand-border:last-child {
+    border-right: unset
+  }
+
+  .brand-border {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-left: unset;
+    border-right: unset;
+  }
+
+  .robalo-lineup-name {
+    padding-bottom: 20px;
+  }
+
 
   .form-wrapper {
     padding: 40px 20px 40px 20px;
