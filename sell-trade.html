@@ -363,6 +363,71 @@
                 min-height: 300px;
             }
         }
+
+        /* Ready to Sell Section Styles */
+        .ready-to-sell-section {
+            background-image: url('./assets/images/service/service-img-5.webp'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 100px 0;
+            position: relative;
+            text-align: center;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .ready-to-sell-content-box {
+            background-color: rgba(255, 255, 255, 0.95);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            border-radius: 4px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .ready-to-sell-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 20px;
+            font-family: 'gotham-bold', sans-serif;
+        }
+
+        .ready-to-sell-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ready-to-sell-link {
+            color: #C74D41;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: 'gotham-bold', sans-serif;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .ready-to-sell-link:hover {
+            color: #a63d33;
+            text-decoration: none;
+            border-bottom: 2px solid #a63d33;
+        }
+
+        @media (max-width: 768px) {
+            .ready-to-sell-content-box {
+                 padding: 40px 20px;
+            }
+             .ready-to-sell-title {
+                font-size: 28px;
+            }
+        }
         
     </style>
 
@@ -571,6 +636,17 @@
                     <a href="#" class="consignment-valuation-btn">START WITH A VALUATION</a>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Sell Section -->
+    <section class="ready-to-sell-section">
+        <div class="container">
+            <div class="ready-to-sell-content-box">
+                <h2 class="ready-to-sell-title">Ready to Sell Your Boat?</h2>
+                <p class="ready-to-sell-text">Your boat deserves a new adventure just as much as you do. At South Austin Marine, we take pride in helping you sell your boat quickly, easily, and with confidence.</p>
+                <a href="#" class="ready-to-sell-link">START WITH A VALUATION</a>
             </div>
         </div>
     </section>
