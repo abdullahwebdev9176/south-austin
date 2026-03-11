@@ -21,21 +21,21 @@
 <body>
 
     <div class="common-header">
-        <img src="/assets/images/service/service-img-1.webp" class="page-banner-img" alt="">
+        <img src="./assets/images/sell-trade/sell-trade-img-1.webp" class="page-banner-img" alt="">
 
         <div class="common-header-content">
-            <p class="common-banner-subtitle">Sell Your Boat</p>
-            <h1 class="common-banner-title mt-3 mb-4">Boat Repair in Austin, TX</h1>
-            <p class="banner-rich-text">Is it time for a fresh chapter on the water or a different kind of adventure? At South Austin Marine, it's easy to sell your boat and get the value you deserve. Located right here in Austin, we specialize in making the selling process smooth and stress-free.</p>
-            <a id="home-more-about-us" href="/about" class="blue-btn">Start With A Valuation</a> 
+            <h1 class="common-banner-title mt-3 mb-4">Sell Your Boat</h1>
+            <p class="banner-rich-text">Is it time for a fresh chapter on the water or a different kind of adventure? At
+                South Austin Marine, it's easy to sell your boat and get the value you deserve. Located right here in
+                Austin, we specialize in making the selling process smooth and stress-free.</p>
+            <a id="home-more-about-us" href="/about" class="blue-btn">Start With A Valuation</a>
         </div>
     </div>
 
-     <style>
+    <style>
         /* Custom Styles for Sell Trade Page */
         .sell-trade-features-section {
-            padding: 60px 0;
-            font-family: 'Manrope', sans-serif;
+            padding: 0 0 60px 0;
         }
 
         .sell-trade-feature-card {
@@ -65,19 +65,15 @@
         }
 
         .sell-trade-feature-heading {
-            font-size: 16px;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-            color: #000;
-            font-family: 'gotham-bold', sans-serif;
-        }
+            color: var(--Blk, #000);
 
-        .sell-trade-feature-description {
-            font-size: 14px;
-            line-height: 1.5;
-            color: #444;
-            font-family: 'Manrope', sans-serif;
+            /* h3 */
+            font-family: Manrope;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
         }
 
         .sell-trade-intro-box {
@@ -93,15 +89,18 @@
         }
 
         .sell-trade-intro-text {
+            color: var(--Blk, #000);
+            text-align: center;
+            font-family: Manrope;
             font-size: 16px;
-            line-height: 1.6;
-            color: #333;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
             margin-bottom: 0;
         }
 
         .sell-trade-highlight-red {
             color: #C74D41;
-            font-weight: 700;
         }
 
         .sell-trade-highlight-bold {
@@ -114,69 +113,33 @@
             margin-bottom: 60px;
         }
 
-        .sell-trade-valuation-btn {
-            background-color: #00386E;
-            color: #ffffff;
-            padding: 15px 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 4px;
-            text-decoration: none;
-            display: inline-block;
-            transition: opacity 0.3s;
-            font-family: 'gotham-bold', sans-serif;
-        }
-
-        .sell-trade-valuation-btn:hover {
-            color: #ffffff;
-            opacity: 0.9;
-            text-decoration: none;
-        }
-
         @media (max-width: 768px) {
             .sell-trade-intro-box {
                 padding: 30px 20px;
             }
+
             .sell-trade-feature-card {
-                flex-direction: row; /* Keep row generally, unless very small */
+                flex-direction: row;
+                /* Keep row generally, unless very small */
             }
         }
+
         @media (max-width: 480px) {
-             .sell-trade-feature-card {
+            .sell-trade-feature-card {
                 flex-direction: column;
             }
+
             .sell-trade-icon-box {
                 margin-bottom: 15px;
             }
         }
 
-        /* Our Process Section Styles */
         .process-section {
-            background-color: #00386E; /* Dark Blue */
+            background-color: #00386E;
             padding: 80px 0;
             color: #ffffff;
             font-family: 'Manrope', sans-serif;
             margin-top: 60px;
-        }
-
-        .process-title {
-            text-align: center;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            font-family: 'gotham-bold', sans-serif;
-        }
-
-        .process-subtitle {
-            text-align: center;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 50px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            color: #e0e0e0;
         }
 
         .process-card {
@@ -191,7 +154,8 @@
         .process-number-badge {
             width: 40px;
             height: 40px;
-            background-color: #C74D41; /* Red */
+            background-color: #C74D41;
+            /* Red */
             color: #ffffff;
             border-radius: 50%;
             display: flex;
@@ -203,55 +167,32 @@
         }
 
         .process-card-title {
-            font-size: 18px;
-            font-weight: 800;
-            margin-bottom: 15px;
-            color: #000;
-            font-family: 'gotham-bold', sans-serif;
-        }
+            color: var(--Blk, #000);
 
-        .process-card-text {
-            font-size: 14px;
-            line-height: 1.5;
-            color: #555;
-            margin-bottom: 0;
+            /* h5 */
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+            /* 133.333% */
+            margin-bottom: 15px;
         }
 
         .process-cta-container {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
         }
 
         .process-cta-text {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #ffffff;
+            margin-bottom: 40px;
         }
 
-        .process-cta-btn {
-            background-color: #C74D41; /* Red */
-            color: #ffffff;
-            padding: 15px 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 14px;
-            border-radius: 4px;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s;
-            font-family: 'gotham-bold', sans-serif;
-        }
-
-        .process-cta-btn:hover {
-            background-color: #a63d33;
-            color: #ffffff;
-            text-decoration: none;
-        }
 
         @media (max-width: 991px) {
-             .process-card {
-                 margin-bottom: 30px;
-             }
+            .process-card {
+                margin-bottom: 30px;
+            }
         }
 
         /* Consigment Section Styles */
@@ -261,15 +202,6 @@
             background-color: #ffffff;
         }
 
-        .gray-image-placeholder {
-            background-color: #D9D9D9; /* Light Gray */
-            width: 100%;
-            height: 100%;
-            min-height: 400px; /* Ensure height if empty */
-            display: block;
-            border-radius: 4px; /* Optional slight radius */
-        }
-
         .consignment-feature-row {
             display: flex;
             margin-bottom: 30px;
@@ -277,62 +209,47 @@
         }
 
         .consignment-icon-box {
-            width: 40px;
-            height: 40px;
+            width: 56px;
+            height: 56px;
             background-color: #C74D41;
-            border-radius: 6px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
             margin-right: 20px;
-            color: #fff;
-            font-size: 18px;
         }
 
         .consignment-feature-title {
-            font-size: 16px;
+            color: var(--Blk, #000);
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
             font-weight: 800;
+            line-height: 24px;
             margin-bottom: 8px;
-            color: #000;
-            font-family: 'gotham-bold', sans-serif;
-        }
-
-        .consignment-feature-text {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #444;
-            margin: 0;
         }
 
         .consignment-divider {
-            border-top: 1px solid #E0E0E0;
+            border-top: 1px solid var(--gray-color);
             margin: 30px 0;
+            height: 1px;
+            width: 100%;
         }
 
         .consignment-bottom-text-wrapper {
             display: flex;
-            align-items: flex-start; /* To align icon with top line of text */
+            align-items: flex-start;
             margin-bottom: 30px;
         }
 
         .consignment-check-icon {
-            color: #C74D41;
-            font-size: 20px;
             margin-right: 15px;
             flex-shrink: 0;
-            margin-top: 2px; /* Slight visual adjustment */
-        }
-
-        .consignment-bottom-text {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #333;
         }
 
         .consignment-bottom-text strong {
             font-weight: 800;
-            color: #000;
         }
 
         .consignment-valuation-btn {
@@ -356,296 +273,329 @@
         }
 
         @media (max-width: 991px) {
-            .consignment-section .row > div:first-child {
+            .consignment-section .row>div:first-child {
                 margin-bottom: 40px;
-            }
-            .gray-image-placeholder {
-                min-height: 300px;
             }
         }
 
         /* Ready to Sell Section Styles */
         .ready-to-sell-section {
-            background-image: url('./assets/images/service/service-img-5.webp'); /* Placeholder image */
+            background-image: url('./assets/images/sell-trade/sell-trade-img-3.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            padding: 100px 0;
+            padding: 200px 0;
             position: relative;
             text-align: center;
             font-family: 'Manrope', sans-serif;
         }
 
         .ready-to-sell-content-box {
-            background-color: rgba(255, 255, 255, 0.95);
+            background-color: rgba(255, 255, 255, 0.9);
             max-width: 900px;
             margin: 0 auto;
             padding: 60px 40px;
             border-radius: 4px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .ready-to-sell-title {
-            font-size: 36px;
-            font-weight: 800;
-            color: #000;
-            margin-bottom: 20px;
-            font-family: 'gotham-bold', sans-serif;
-        }
-
-        .ready-to-sell-text {
-            font-size: 14px;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .ready-to-sell-link {
+            display: inline-block;
+            padding: 13px 28px;
             color: #C74D41;
-            font-size: 14px;
+            text-align: center;
+            font-family: "Manrope", sans-serif;
+            font-size: 16px;
+            font-style: normal;
             font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.8px;
             text-transform: uppercase;
-            text-decoration: none;
-            font-family: 'gotham-bold', sans-serif;
-            border-bottom: 2px solid transparent;
-            transition: all 0.3s ease;
+            border-radius: 8px;
+            background: transparent;
+            border: none;
         }
 
         .ready-to-sell-link:hover {
-            color: #a63d33;
+            color: #C74D41;
             text-decoration: none;
-            border-bottom: 2px solid #a63d33;
+            background: transparent;
         }
 
         @media (max-width: 768px) {
             .ready-to-sell-content-box {
-                 padding: 40px 20px;
+                padding: 40px 20px;
             }
-             .ready-to-sell-title {
+
+            .ready-to-sell-title {
                 font-size: 28px;
             }
         }
-        
     </style>
 
     <section class="central-content">
         <h2 class="central-title mb-3">Why Choose Us</h2>
-        <p class="mb-4">One of the best ways to find a buyer for your boat is by working with the right partner who understands your needs. At South Austin Marine, we offer unmatched expertise, local knowledge, and exceptional service.
+        <p class="mb-4">One of the best ways to find a buyer for your boat is by working with the right partner who
+            understands your needs. At South Austin Marine, we offer unmatched expertise, local knowledge, and
+            exceptional service.
         </p>
     </section>
 
-    <div class="container sell-trade-features-section">
-        <div class="row">
-            <!-- Feature 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-certificate sell-trade-icon-element"></i>
+    <div class="austin-container">
+        <div class="container-fluid sell-trade-features-section">
+            <div class="row">
+                <!-- Feature 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-1.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">DECADES OF EXPERTISE</h5>
+                            <p class="sell-trade-feature-description">Deep understanding of the local market to ensure
+                                your
+                                boat gets maximum exposure and competitive offers.</p>
+                        </div>
                     </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">DECADES OF EXPERTISE</h5>
-                        <p class="sell-trade-feature-description">Deep understanding of the local market to ensure your boat gets maximum exposure and competitive offers.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-2.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">LOCAL KNOWLEDGE</h5>
+                            <p class="sell-trade-feature-description">Based right here in Austin, we know the market and
+                                have strong connections with local boat enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-3.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">TRUSTED REPUTATION</h5>
+                            <p class="sell-trade-feature-description">Built on trust and client satisfaction, we make
+                                the
+                                selling process seamless for every customer.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-4.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">MAXIMUM VALUE</h5>
+                            <p class="sell-trade-feature-description">Our pricing strategy ensures you get the best
+                                possible
+                                return on your investment.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-5.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">SECURE TRANSACTIONS</h5>
+                            <p class="sell-trade-feature-description">We handle all the details with professionalism,
+                                ensuring a safe and secure sale process.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="sell-trade-feature-card">
+                        <div class="sell-trade-icon-box">
+                            <img src="./assets/images/sell-trade/trade-icon-6.svg" alt="">
+                        </div>
+                        <div class="sell-trade-content-box">
+                            <h5 class="sell-trade-feature-heading">FAST RESULTS</h5>
+                            <p class="sell-trade-feature-description">Our proven marketing approach helps sell boats
+                                faster
+                                than traditional methods.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Feature 2 -->
-            <div class="col-lg-4 col-md-6">
-                 <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-map-marker sell-trade-icon-element"></i>
-                    </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">LOCAL KNOWLEDGE</h5>
-                        <p class="sell-trade-feature-description">Based right here in Austin, we know the market and have strong connections with local boat enthusiasts.</p>
-                    </div>
-                </div>
+
+            <div class="sell-trade-intro-box">
+                <p class="sell-trade-intro-text">
+                    We've spent <span class="sell-trade-highlight-red">decades</span> helping boat enthusiasts sell and
+                    buy
+                    with confidence. With a reputation built on trust and client satisfaction, we take pride in making
+                    the
+                    selling process seamless for every customer. <span class="sell-trade-highlight-bold">You won't just
+                        work
+                        with professionals; you'll work with neighbors who care about your success.</span>
+                </p>
             </div>
-            <!-- Feature 3 -->
-            <div class="col-lg-4 col-md-6">
-                 <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-users sell-trade-icon-element"></i>
-                    </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">TRUSTED REPUTATION</h5>
-                        <p class="sell-trade-feature-description">Built on trust and client satisfaction, we make the selling process seamless for every customer.</p>
-                    </div>
-                </div>
+
+            <div class="sell-trade-btn-wrapper">
+                <a href="#" class="blue-btn">START WITH A VALUATION</a>
             </div>
-            <!-- Feature 4 -->
-            <div class="col-lg-4 col-md-6">
-                 <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-line-chart sell-trade-icon-element"></i>
-                    </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">MAXIMUM VALUE</h5>
-                        <p class="sell-trade-feature-description">Our pricing strategy ensures you get the best possible return on your investment.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature 5 -->
-            <div class="col-lg-4 col-md-6">
-                 <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-shield sell-trade-icon-element"></i>
-                    </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">SECURE TRANSACTIONS</h5>
-                        <p class="sell-trade-feature-description">We handle all the details with professionalism, ensuring a safe and secure sale process.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Feature 6 -->
-            <div class="col-lg-4 col-md-6">
-                 <div class="sell-trade-feature-card">
-                    <div class="sell-trade-icon-box">
-                        <i class="fa fa-bolt sell-trade-icon-element"></i>
-                    </div>
-                    <div class="sell-trade-content-box">
-                        <h5 class="sell-trade-feature-heading">FAST RESULTS</h5>
-                        <p class="sell-trade-feature-description">Our proven marketing approach helps sell boats faster than traditional methods.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <div class="sell-trade-intro-box">
-            <p class="sell-trade-intro-text">
-                We've spent <span class="sell-trade-highlight-red">decades</span> helping boat enthusiasts sell and buy with confidence. With a reputation built on trust and client satisfaction, we take pride in making the selling process seamless for every customer. <span class="sell-trade-highlight-bold">You won't just work with professionals; you'll work with neighbors who care about your success.</span>
-            </p>
-        </div>
-    
-        <div class="sell-trade-btn-wrapper">
-            <a href="#" class="sell-trade-valuation-btn">START WITH A VALUATION</a>
         </div>
     </div>
 
+
     <section class="process-section">
-        <div class="container">
-            <h2 class="process-title">Our Process</h2>
-            <div class="process-subtitle">
-                At South Austin Marine, we've fine-tuned our process to take the stress out of selling your boat. From start to finish, we guide you every step of the way.
-            </div>
+        <div class="austin-container">
+            <div class="container-fluid">
 
-            <div class="row">
-                <!-- Step 1 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div class="process-card">
-                        <div class="process-number-badge">01</div>
-                        <h4 class="process-card-title">In-Depth Consultation</h4>
-                        <p class="process-card-text">Our experts assess your boat's value, condition, and market appeal to ensure accurate pricing.</p>
+                <section class="central-content mt-0">
+                    <h2 class="central-title mb-3 text-white">Our Process</h2>
+                    <p class="mb-4 text-white">At South Austin Marine, we've fine-tuned our process to take the stress out of
+                        selling your boat. From
+                        start to finish, we guide you every step of the way.
+                    </p>
+                </section>
+
+                <div class="row">
+                    <!-- Step 1 -->
+                    <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+                        <div class="process-card">
+                            <div class="process-number-badge">01</div>
+                            <h4 class="process-card-title">In-Depth Consultation</h4>
+                            <p class="process-card-text">Our experts assess your boat's value, condition, and market
+                                appeal
+                                to ensure accurate pricing.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+                        <div class="process-card">
+                            <div class="process-number-badge">02</div>
+                            <h4 class="process-card-title">Professional Listing</h4>
+                            <p class="process-card-text">We craft a professional listing that highlights your boat's
+                                best
+                                qualities to stand out to potential buyers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+                        <div class="process-card">
+                            <div class="process-number-badge">03</div>
+                            <h4 class="process-card-title">Strategic Marketing</h4>
+                            <p class="process-card-text">We put our marketing expertise to work, reaching a targeted
+                                audience through online platforms and local connections.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="col-xl-3 col-md-6 mb-4 mb-xl-0">
+                        <div class="process-card">
+                            <div class="process-number-badge">04</div>
+                            <h4 class="process-card-title">Hassle-Free Closing</h4>
+                            <p class="process-card-text">When the right buyer comes along, we handle the paperwork and
+                                closing details for a smooth transaction.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-                    <div class="process-card">
-                        <div class="process-number-badge">02</div>
-                        <h4 class="process-card-title">Professional Listing</h4>
-                        <p class="process-card-text">We craft a professional listing that highlights your boat's best qualities to stand out to potential buyers.</p>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <div class="process-card">
-                        <div class="process-number-badge">03</div>
-                        <h4 class="process-card-title">Strategic Marketing</h4>
-                        <p class="process-card-text">We put our marketing expertise to work, reaching a targeted audience through online platforms and local connections.</p>
-                    </div>
-                </div>
-
-                 <!-- Step 4 -->
-                 <div class="col-lg-3 col-md-6">
-                    <div class="process-card">
-                        <div class="process-number-badge">04</div>
-                        <h4 class="process-card-title">Hassle-Free Closing</h4>
-                        <p class="process-card-text">When the right buyer comes along, we handle the paperwork and closing details for a smooth transaction.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process-cta-container">
-                <p class="process-cta-text">If you need to sell your boat, we're the perfect team to help you make it happen.</p>
-                <a href="#" class="process-cta-btn">START WITH A VALUATION</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Consignment Benefits Section -->
-    <section class="consignment-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Column: Gray Placeholder Image -->
-                <div class="col-lg-6">
-                    <div class="gray-image-placeholder"></div>
-                    <!-- Or use an img tag if you have one: <img src="..." class="img-fluid rounded" alt="..."> -->
-                </div>
-
-                <!-- Right Column: Features List -->
-                <div class="col-lg-6">
-                    <!-- Feature 1 -->
-                    <div class="consignment-feature-row">
-                        <div class="consignment-icon-box">
-                            <i class="fa fa-clock-o"></i>
-                        </div>
-                        <div>
-                            <h5 class="consignment-feature-title">Timesaving</h5>
-                            <p class="consignment-feature-text">Skip the hassle of creating listings or attributing with buyers—we do the heavy lifting.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="consignment-feature-row">
-                        <div class="consignment-icon-box">
-                            <i class="fa fa-line-chart"></i>
-                        </div>
-                        <div>
-                            <h5 class="consignment-feature-title">Professional Expertise</h5>
-                            <p class="consignment-feature-text">We'll price and market your boat competitively for faster results.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="consignment-feature-row">
-                        <div class="consignment-icon-box">
-                            <i class="fa fa-shield"></i>
-                        </div>
-                        <div>
-                            <h5 class="consignment-feature-title">Safety and Security</h5>
-                            <p class="consignment-feature-text">We pre-screen buyers so that only serious offers come in your way.</p>
-                        </div>
-                    </div>
-
-                    <!-- Divider -->
-                    <div class="consignment-divider"></div>
-
-                    <!-- Check Text -->
-                    <div class="consignment-bottom-text-wrapper">
-                        <i class="fa fa-check-circle-o consignment-check-icon"></i>
-                        <p class="consignment-bottom-text">
-                            When it comes to <strong>trusted boat consignments in Austin, Texas</strong>, our team is ready to deliver exceptional results while saving you time and effort.
-                        </p>
-                    </div>
-
-                    <!-- CTA Button -->
-                    <a href="#" class="consignment-valuation-btn">START WITH A VALUATION</a>
-
+                <div class="process-cta-container">
+                    <p class="process-cta-text text-white">If you need to sell your boat, we're the perfect team to help
+                        you make
+                        it
+                        happen.</p>
+                    <a href="#" class="btn-global-rd">START WITH A VALUATION</a>
                 </div>
             </div>
         </div>
+
     </section>
+
+    <secton class="austin-featured">
+        <div class="austin-container">
+            <div class="austin-featured-box">
+
+                <div class="austin-featured-col">
+                    <div class="austin-featured-img">
+                        <img src="/assets/images/dummy.png" alt="MADIS MARINE">
+                    </div>
+                </div>
+
+                <div class="austin-featured-col">
+                    <div class="content-box mob-pb">
+                        <!-- Feature 1 -->
+                        <div class="consignment-feature-row">
+                            <div class="consignment-icon-box">
+                                <img src="./assets/images/sell-trade/trade-icon-7.svg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="consignment-feature-title">Timesaving</h5>
+                                <p class="consignment-feature-text">Skip the hassle of creating listings or attributing
+                                    with
+                                    buyers—we do the heavy lifting.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 2 -->
+                        <div class="consignment-feature-row">
+                            <div class="consignment-icon-box">
+                                <img src="./assets/images/sell-trade/trade-icon-4.svg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="consignment-feature-title">Professional Expertise</h5>
+                                <p class="consignment-feature-text">We'll price and market your boat competitively for
+                                    faster results.</p>
+                            </div>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="consignment-feature-row">
+                            <div class="consignment-icon-box">
+                                <img src="./assets/images/sell-trade/trade-icon-5.svg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="consignment-feature-title">Safety and Security</h5>
+                                <p class="consignment-feature-text">We pre-screen buyers so that only serious offers
+                                    come in
+                                    your way.</p>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="consignment-divider"></div>
+
+                        <!-- Check Text -->
+                        <div class="consignment-bottom-text-wrapper">
+                            <img src="./assets/images/sell-trade/trade-icon-8.svg" class="consignment-check-icon"
+                                alt="">
+                            <p class="consignment-bottom-text">
+                                When it comes to <strong>trusted boat consignments in Austin, Texas</strong>, our team
+                                is
+                                ready to deliver exceptional results while saving you time and effort.
+                            </p>
+                        </div>
+
+                        <div class="mt-3 sec-btn">
+                            <a id="home-more-about-us" href="/about" class="blue-btn">START WITH A VALUATION</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </secton>
 
     <!-- Ready to Sell Section -->
     <section class="ready-to-sell-section">
         <div class="container">
             <div class="ready-to-sell-content-box">
-                <h2 class="ready-to-sell-title">Ready to Sell Your Boat?</h2>
-                <p class="ready-to-sell-text">Your boat deserves a new adventure just as much as you do. At South Austin Marine, we take pride in helping you sell your boat quickly, easily, and with confidence.</p>
+                <h2 class="central-title">Ready to Sell Your Boat?</h2>
+                <p>Your boat deserves a new adventure just as much as you do. At South Austin
+                    Marine, we take pride in helping you sell your boat quickly, easily, and with confidence.</p>
                 <a href="#" class="ready-to-sell-link">START WITH A VALUATION</a>
             </div>
         </div>

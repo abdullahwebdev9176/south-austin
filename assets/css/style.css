@@ -4848,6 +4848,12 @@ ul {
 
 
 @media (max-width: 1500px) {
+  .ready-to-sell-section {
+    padding: 100px 0;
+}
+  .sell-trade-feature-heading {
+    font-size: 20px;
+}
   .robalo-lineup-section {
     padding: 40px 0 64px 0;
   }
@@ -5129,6 +5135,14 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .process-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.consignment-feature-row {
+    width: 100%;
+    text-align: left;
+}
   .card-columns {
     column-count: 2;
   }
