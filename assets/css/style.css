@@ -29,12 +29,24 @@
   --font-LibreBaskerville: "Libre Baskerville", serif;
   --font-arial: "Arial";
   --font-Montserrat: "Montserrat", sans-serif;
+  --regular-gotham: "gotham-regular";
+  --bold-gotham: "gotham-bold";
 }
 
 
 @font-face {
   font-family: 'Arial-regular';
   src: url('../fonts/arial/Arial-regular.ttf');
+}
+
+@font-face {
+  font-family: 'gotham-regular';
+  src: url('../fonts/Gotham-Font/GothamBook.ttf');
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../fonts/Gotham-Font/GothamBold.ttf');
 }
 
 /* form css start here */
@@ -367,6 +379,29 @@
   color: var(--Wt);
   text-decoration: none;
   border: 1px solid var(--Wt, #FFF);
+}
+
+.gotham-red-btn {
+  display: inline-block;
+  padding: 15px 28px;
+  color: #FFF;
+  text-align: center;
+  font-family: var(--gotham-regular);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: var(--Reddish, #C74D41);
+  border: none;
+}
+
+.gotham-red-btn:hover {
+  background-color: #af3e33;
+  color: var(--Wt);
+  text-decoration: none;
 }
 
 a {
@@ -4449,6 +4484,7 @@ ul {
 .robalo-hero {
   position: relative;
   padding-top: 49%;
+  min-height: 450px;
 }
 
 .robalo-hero video {
@@ -4652,6 +4688,9 @@ ul {
   border-bottom: 1px solid var(--D9, #D9D9D9);
   background: #FFF;
   margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 .brand-subtitle {
@@ -5425,6 +5464,12 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .brand-banner {
+    position: unset;
+    top: unset;
+    z-index: unset;
+  }
+
   .event-header {
     flex-direction: column;
     text-align: center;
@@ -5607,6 +5652,19 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .robalo-hero-title {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+  }
+
+  .austin-crew-container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .card-columns {
     column-count: 1;
   }
