@@ -33,11 +33,6 @@
     </div>
 
     <style>
-        /* Custom Styles for Sell Trade Page */
-        .sell-trade-features-section {
-            padding: 0 0 60px 0;
-        }
-
         .sell-trade-feature-card {
             display: flex;
             margin-bottom: 30px;
@@ -66,8 +61,6 @@
 
         .sell-trade-feature-heading {
             color: var(--Blk, #000);
-
-            /* h3 */
             font-family: Manrope;
             font-size: 24px;
             font-style: normal;
@@ -113,33 +106,11 @@
             margin-bottom: 60px;
         }
 
-        @media (max-width: 768px) {
-            .sell-trade-intro-box {
-                padding: 30px 20px;
-            }
-
-            .sell-trade-feature-card {
-                flex-direction: row;
-                /* Keep row generally, unless very small */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .sell-trade-feature-card {
-                flex-direction: column;
-            }
-
-            .sell-trade-icon-box {
-                margin-bottom: 15px;
-            }
-        }
-
         .process-section {
             background-color: #00386E;
             padding: 80px 0;
             color: #ffffff;
             font-family: 'Manrope', sans-serif;
-            margin-top: 60px;
         }
 
         .process-card {
@@ -155,8 +126,12 @@
             width: 40px;
             height: 40px;
             background-color: #C74D41;
-            /* Red */
-            color: #ffffff;
+            color: var(--Wt, #FFF);
+            font-family: Manrope;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 28px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -168,14 +143,11 @@
 
         .process-card-title {
             color: var(--Blk, #000);
-
-            /* h5 */
             font-family: Manrope;
             font-size: 18px;
             font-style: normal;
             font-weight: 800;
             line-height: 24px;
-            /* 133.333% */
             margin-bottom: 15px;
         }
 
@@ -188,14 +160,6 @@
             margin-bottom: 40px;
         }
 
-
-        @media (max-width: 991px) {
-            .process-card {
-                margin-bottom: 30px;
-            }
-        }
-
-        /* Consigment Section Styles */
         .consignment-section {
             padding: 80px 0;
             font-family: 'Manrope', sans-serif;
@@ -272,13 +236,21 @@
             text-decoration: none;
         }
 
-        @media (max-width: 991px) {
-            .consignment-section .row>div:first-child {
-                margin-bottom: 40px;
-            }
+        .trade-banner {
+            position: relative;
+            padding-top: 32%;
+            min-height: 350px;
         }
 
-        /* Ready to Sell Section Styles */
+        .trade-banner img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
         .ready-to-sell-section {
             background-image: url('./assets/images/sell-trade/sell-trade-img-3.webp');
             background-size: cover;
@@ -320,16 +292,6 @@
             color: #C74D41;
             text-decoration: none;
             background: transparent;
-        }
-
-        @media (max-width: 768px) {
-            .ready-to-sell-content-box {
-                padding: 40px 20px;
-            }
-
-            .ready-to-sell-title {
-                font-size: 28px;
-            }
         }
     </style>
 
@@ -446,6 +408,10 @@
         </div>
     </div>
 
+    <div class="trade-banner">
+        <img src="./assets/images/sell-trade/sell-trade-img-2.webp" alt="">
+    </div>
+
 
     <section class="process-section">
         <div class="austin-container">
@@ -453,7 +419,8 @@
 
                 <section class="central-content mt-0">
                     <h2 class="central-title mb-3 text-white">Our Process</h2>
-                    <p class="mb-4 text-white">At South Austin Marine, we've fine-tuned our process to take the stress out of
+                    <p class="mb-4 text-white">At South Austin Marine, we've fine-tuned our process to take the stress
+                        out of
                         selling your boat. From
                         start to finish, we guide you every step of the way.
                     </p>

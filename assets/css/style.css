@@ -4752,79 +4752,79 @@ ul {
 /* avalon brand page css start here */
 
 .avalon-section-title {
-            border-left: 3px solid #d9534f;
-            padding-left: 15px;
-            color: #FFF;
-            font-family: var(--regular-gotham);
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 28px;
-            text-transform: uppercase;
-        }
+  border-left: 3px solid #d9534f;
+  padding-left: 15px;
+  color: #FFF;
+  font-family: var(--regular-gotham);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+}
 
-        .avalon-lineup-section {
-            background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.4)), url(./assets/images/brand-avalon/avalon-img-11.webp) no-repeat center center;
-            background-size: cover;
-            padding: 90px 0 106px 0;
-        }
+.avalon-lineup-section {
+  background: linear-gradient(rgb(0 0 0 / 75%), rgba(0, 0, 0, 0.4)), url(./assets/images/brand-avalon/avalon-img-11.webp) no-repeat center center;
+  background-size: cover;
+  padding: 90px 0 106px 0;
+}
 
-        .avalon-boat-card {
-            position: relative;
-            padding-top: 57%;
-        }
+.avalon-boat-card {
+  position: relative;
+  padding-top: 57%;
+}
 
-        .avalon-boat-card img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 6px;
-            background: rgba(0, 0, 0, 0.50);
-        }
+.avalon-boat-card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.50);
+}
 
-        .avalon-boat-card .card-title {
-            color: #FFF;
-            font-family: var(--bold-gotham);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 21px;
-        }
+.avalon-boat-card .card-title {
+  color: #FFF;
+  font-family: var(--bold-gotham);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+}
 
-        .avalon-card-content p {
-            color: #D2D3D5;
-            font-family: var(--regular-gotham);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 22px;
-        }
+.avalon-card-content p {
+  color: #D2D3D5;
+  font-family: var(--regular-gotham);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
 
-        .avalon-card-content {
-            position: absolute;
-            bottom: 12px;
-            left: 12px;
-        }
+.avalon-card-content {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
 
-        .why-avalon-section {
-            min-height: 600px;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('./assets/images/brand-avalon/avalon-bg.webp') no-repeat center center;
-            background-size: cover;
-            color: white;
-        }
+.why-avalon-section {
+  min-height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./assets/images/brand-avalon/avalon-bg.webp') no-repeat center center;
+  background-size: cover;
+  color: white;
+}
 
-        .avalon-description {
-            color: #FFF;
-            font-family: var(--regular-gotham);
-            font-size: 17px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 23.8px;
-        }
+.avalon-description {
+  color: #FFF;
+  font-family: var(--regular-gotham);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.8px;
+}
 
 @media (max-width: 1600px) {
   .career-modal-wrapper {
@@ -4850,10 +4850,12 @@ ul {
 @media (max-width: 1500px) {
   .ready-to-sell-section {
     padding: 100px 0;
-}
+  }
+
   .sell-trade-feature-heading {
     font-size: 20px;
-}
+  }
+
   .robalo-lineup-section {
     padding: 40px 0 64px 0;
   }
@@ -5135,14 +5137,24 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .process-card {
+    margin-bottom: 30px;
+  }
+
+  .consignment-section .row>div:first-child {
+    margin-bottom: 40px;
+  }
+
   .process-section {
     margin-top: 40px;
     margin-bottom: 40px;
-}
-.consignment-feature-row {
+  }
+
+  .consignment-feature-row {
     width: 100%;
     text-align: left;
-}
+  }
+
   .card-columns {
     column-count: 2;
   }
@@ -5555,6 +5567,22 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .sell-trade-intro-box {
+    padding: 30px 20px;
+  }
+
+  .sell-trade-feature-card {
+    flex-direction: row;
+  }
+
+  .ready-to-sell-content-box {
+    padding: 40px 20px;
+  }
+
+  .ready-to-sell-title {
+    font-size: 28px;
+  }
+
   .brand-banner {
     position: unset;
     top: unset;
@@ -5957,6 +5985,14 @@ ul {
 }
 
 @media (max-width: 500px) {
+  .sell-trade-feature-card {
+    flex-direction: column;
+  }
+
+  .sell-trade-icon-box {
+    margin-bottom: 15px;
+  }
+
   .logo-item img {
     padding: 4px 10px;
   }
