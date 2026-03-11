@@ -150,6 +150,109 @@
                 margin-bottom: 15px;
             }
         }
+
+        /* Our Process Section Styles */
+        .process-section {
+            background-color: #00386E; /* Dark Blue */
+            padding: 80px 0;
+            color: #ffffff;
+            font-family: 'Manrope', sans-serif;
+            margin-top: 60px;
+        }
+
+        .process-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'gotham-bold', sans-serif;
+        }
+
+        .process-subtitle {
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #e0e0e0;
+        }
+
+        .process-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            height: 100%;
+            color: #333;
+            position: relative;
+        }
+
+        .process-number-badge {
+            width: 40px;
+            height: 40px;
+            background-color: #C74D41; /* Red */
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .process-card-title {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            color: #000;
+            font-family: 'gotham-bold', sans-serif;
+        }
+
+        .process-card-text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        .process-cta-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .process-cta-text {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .process-cta-btn {
+            background-color: #C74D41; /* Red */
+            color: #ffffff;
+            padding: 15px 35px;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+            font-family: 'gotham-bold', sans-serif;
+        }
+
+        .process-cta-btn:hover {
+            background-color: #a63d33;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 991px) {
+             .process-card {
+                 margin-bottom: 30px;
+             }
+        }
         
     </style>
 
@@ -246,10 +349,56 @@
         </div>
     </div>
 
-    <section class="central-content">
-        <h2 class="central-title mb-3">Benefits of Marine Consignment</h2>
-        <p class="mb-4">Not sure how to go about selling your boat? Marine consignment might be the perfect solution for you!
-        </p>
+    <section class="process-section">
+        <div class="container">
+            <h2 class="process-title">Our Process</h2>
+            <div class="process-subtitle">
+                At South Austin Marine, we've fine-tuned our process to take the stress out of selling your boat. From start to finish, we guide you every step of the way.
+            </div>
+
+            <div class="row">
+                <!-- Step 1 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="process-card">
+                        <div class="process-number-badge">01</div>
+                        <h4 class="process-card-title">In-Depth Consultation</h4>
+                        <p class="process-card-text">Our experts assess your boat's value, condition, and market appeal to ensure accurate pricing.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="process-card">
+                        <div class="process-number-badge">02</div>
+                        <h4 class="process-card-title">Professional Listing</h4>
+                        <p class="process-card-text">We craft a professional listing that highlights your boat's best qualities to stand out to potential buyers.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <div class="process-card">
+                        <div class="process-number-badge">03</div>
+                        <h4 class="process-card-title">Strategic Marketing</h4>
+                        <p class="process-card-text">We put our marketing expertise to work, reaching a targeted audience through online platforms and local connections.</p>
+                    </div>
+                </div>
+
+                 <!-- Step 4 -->
+                 <div class="col-lg-3 col-md-6">
+                    <div class="process-card">
+                        <div class="process-number-badge">04</div>
+                        <h4 class="process-card-title">Hassle-Free Closing</h4>
+                        <p class="process-card-text">When the right buyer comes along, we handle the paperwork and closing details for a smooth transaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-cta-container">
+                <p class="process-cta-text">If you need to sell your boat, we're the perfect team to help you make it happen.</p>
+                <a href="#" class="process-cta-btn">START WITH A VALUATION</a>
+            </div>
+        </div>
     </section>
 
     <!-- JS Libraries -->
