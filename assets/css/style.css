@@ -66,6 +66,19 @@
   font-weight: 800;
   line-height: 48px;
 }
+.field-error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.error_field {
+    border-color: red !important;
+}
+
+.iti {
+    width: 100%;
+}
 
 .custom-form-control {
   border-radius: 8px;
