@@ -66,18 +66,19 @@
   font-weight: 800;
   line-height: 48px;
 }
+
 .field-error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 .error_field {
-    border-color: red !important;
+  border-color: red !important;
 }
 
 .iti {
-    width: 100%;
+  width: 100%;
 }
 
 .custom-form-control {
@@ -1632,17 +1633,18 @@ ul {
   text-align: center;
 }
 
+.slider-section {
+  padding-bottom: 40px;
+}
+
 .hero-content h1 {
   color: var(--Wt, #FFF);
   text-align: center;
-
-  /* h1 */
   font-family: Michroma;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  /* 120% */
   letter-spacing: 4px;
   text-transform: uppercase;
   margin-bottom: 40px;
@@ -1715,6 +1717,20 @@ ul {
   background: #ffffff;
 }
 
+.bottom-card-img {
+  position: relative;
+  padding-top: 54%;
+}
+
+.bottom-card-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Arrows */
 .nav-arrow {
   color: #fff;
@@ -1729,14 +1745,11 @@ ul {
 
 .prev-arrow {
   width: 16px;
-  /* adjust as needed */
   height: 16px;
-  /* adjust as needed */
   background-image: url('../images/home/prev-btn.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  /* keeps image proper ratio */
   display: block;
 }
 
@@ -1800,6 +1813,11 @@ ul {
 
 .new-arrivals-section {
   padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.fishing-depot-section {
+  padding-bottom: 40px;
 }
 
 .new-arrivals-section .section-title {
@@ -1936,19 +1954,28 @@ ul {
 }
 
 .services-links-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 20px;
 }
 
 .service-link-card {
+  width: calc(100% / 3 - 10px);
   position: relative;
   display: block;
-  width: 100%;
   height: 880px;
   overflow: hidden;
   border-radius: 0;
-  /* Design didn't specify, keeping sharp or default */
+}
+
+.service-link-card::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 438px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
 }
 
 .service-link-card img {
@@ -1962,13 +1989,21 @@ ul {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  height: 437px;
   padding: 0 78px 64px 78px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
-  pointer-events: none;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  z-index: 3;
+}
+
+.brand-carousel .brand-item {
+  height: 35px;
+}
+
+.brand-carousel .brand-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .card-overlay h3 {
@@ -2018,10 +2053,8 @@ ul {
   margin: 40px 0 80px 0;
 }
 
-.bottom-features-section .feature-card .feature-title {
+.bottom-features-section .feature-card .feature-title a {
   color: #000;
-
-  /* h3 */
   font-family: Manrope;
   font-size: 24px;
   font-style: normal;
@@ -2029,6 +2062,7 @@ ul {
   line-height: normal;
   text-transform: uppercase;
   margin-top: 16px;
+  display: inline-block;
 }
 
 .bottom-features-section .feature-card .feature-text {
@@ -2054,7 +2088,6 @@ ul {
   display: flex;
   padding-top: 40px;
   padding-bottom: 40px;
-  align-items: center;
 }
 
 .austin-featured-col .content-box {
@@ -2087,7 +2120,7 @@ ul {
   align-items: flex-start;
   flex-direction: column;
   height: 100%;
-  max-width: 58%;
+  max-width: 63%;
   margin: 0 auto;
 }
 
@@ -2723,17 +2756,6 @@ ul {
   margin-bottom: 30px;
   display: flex;
   align-self: stretch;
-}
-
-.feature-card {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 35px 25px;
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid var(--D9, #D9D9D9);
-  background: #FFF;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
 }
 
 .feature-icon {
@@ -5124,6 +5146,10 @@ ul {
 
 
 @media (max-width: 1500px) {
+  .card-overlay {
+    padding: 0 40px 50px 40px;
+  }
+
   .ready-to-sell-section {
     padding: 100px 0;
   }
@@ -5229,6 +5255,15 @@ ul {
 }
 
 @media (max-width: 1330px) {
+  .card-overlay {
+    padding: 0 30px 40px 30px;
+  }
+
+  .card-overlay h3 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
   .stat-item h2 {
     font-size: 35px;
     line-height: 40px;
@@ -5267,6 +5302,13 @@ ul {
 }
 
 @media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+  }
+
   .robalo-hero-title {
     font-size: 35px;
     line-height: 42px;
@@ -5371,11 +5413,6 @@ ul {
     height: 600px;
   }
 
-  .card-overlay h3 {
-    font-size: 60px;
-    line-height: 68px;
-  }
-
   /* -------Services Links Section CSS End --------- */
   .loc-keuka-rentals .services-links-grid {
     display: grid;
@@ -5413,9 +5450,20 @@ ul {
 }
 
 @media (max-width: 991px) {
-  .consignment-bottom-text-wrapper{
+  .service-link-card {
+    width: calc(100% / 2 - 10px);
+  }
+
+  .services-links-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .consignment-bottom-text-wrapper {
     text-align: left;
   }
+
   .process-card {
     margin-bottom: 30px;
   }
@@ -5846,8 +5894,30 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
+  .services-links-section {
+    padding-bottom: 0;
+  }
+
+  .slider-section {
+    padding-bottom: 20px;
+  }
+
+  .new-arrivals-section {
+    padding-bottom: 50px;
+  }
+
+  .fishing-depot-hero .hero-title {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 3px;
+  }
+
   .sell-trade-intro-box {
     padding: 30px 20px;
+  }
+
+  .card-overlay {
+    padding: 0 30px 25px 25px;
   }
 
   .sell-trade-feature-card {
@@ -6050,6 +6120,26 @@ ul {
 }
 
 @media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 2px;
+  }
+
+  .service-link-card {
+    width: 100%;
+  }
+
+  .fishing-depot-hero .hero-title {
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 3px;
+  }
+
+  .fishing-depot-hero .hero-content-wrapper {
+    padding: 80px 20px;
+  }
+
   .robalo-hero-title {
     font-size: 25px;
     line-height: 30px;
