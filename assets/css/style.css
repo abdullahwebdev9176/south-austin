@@ -1509,7 +1509,8 @@ ul {
 }
 
 .footer-logo-section img {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -1523,14 +1524,11 @@ ul {
 
 .footer-location-title {
   color: #FFF;
-
-  /* h5 */
   font-family: Manrope;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: 24px;
-  /* 133.333% */
   margin-bottom: 8px;
 }
 
@@ -5478,6 +5476,13 @@ ul {
 }
 
 @media (max-width: 991px) {
+  .footer-location-section {
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-links-list li {
+    text-align: left;
+}
   .navbar-austin{
     display: none;
   }
